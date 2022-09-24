@@ -392,6 +392,7 @@ $single-measurement-seven: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     .app-show-content{
         width: 40%;
@@ -438,6 +439,7 @@ $single-measurement-seven: 70px;
         .tags{
             position: relative;
             width: 100%;
+            margin-top: $single-measurement-two;
         }
 
         .app-image-content{
@@ -494,13 +496,13 @@ $single-measurement-seven: 70px;
             }
 
             .second-tag{
-                top: 40px;
-                right: -40%;
+                top: 50px;
+                right: -70px;
             }
 
             .third-tag{
                 background: $primary-color;
-                top: 80px;
+                top: 100px;
                 left: 30%;
             }
 
@@ -510,6 +512,7 @@ $single-measurement-seven: 70px;
 
     .app-showcase{
         padding: 0px;
+        width: 50%;
 
         .app-shocase-text{
             padding: $single-measurement-two;
@@ -562,6 +565,15 @@ $single-measurement-seven: 70px;
                 min-height: 100px;
             }
 
+        }
+    }
+
+    .app-show-container{
+        justify-content: center;
+
+        .app-show-content{
+            width: 90%;
+            margin-bottom: $single-measurement-five;
         }
     }
 
@@ -631,6 +643,80 @@ $single-measurement-seven: 70px;
 
             .service-card{
                 width: 100%;
+            }
+        }
+    }
+
+    .app-show-container{
+
+        .app-show-content{
+            width: 100%;
+
+            .app-image-content{
+
+                .third-tag{
+                    top: 65px;
+                    left: 20%;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 450px){
+
+    .app-show-container{
+
+        .app-show-content{
+            width: 100%;
+
+            h2,
+            h3{
+                text-align: center;
+            }
+
+            .app-purpose{
+                flex-direction: column;
+
+                .purpose{
+                    width: 100%;
+                    text-align: center;
+
+                }
+            }
+
+            
+            .app-image-content{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                .content-one{
+                    width: 100%;
+
+                    .phone-image{
+                        max-width: 200px;
+                        margin-inline: auto;
+
+                    }
+                }
+
+                .first-tag{
+                    left: 40%;
+
+                }
+
+                .second-tag{
+                    right: 5px;
+                }
+
+                .third-tag{
+                    top: 100px;
+                    left: 20px;
+                }
+                
             }
         }
     }

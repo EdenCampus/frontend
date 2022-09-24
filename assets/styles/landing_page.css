@@ -273,6 +273,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .app-show-container .app-show-content {
   width: 40%;
@@ -307,6 +308,7 @@
 .app-show-container .app-show-content .tags {
   position: relative;
   width: 100%;
+  margin-top: 20px;
 }
 .app-show-container .app-show-content .app-image-content {
   display: flex;
@@ -353,16 +355,17 @@
   color: white;
 }
 .app-show-container .app-show-content .app-image-content .second-tag {
-  top: 40px;
-  right: -40%;
+  top: 50px;
+  right: -70px;
 }
 .app-show-container .app-show-content .app-image-content .third-tag {
   background: rgb(211, 145, 58);
-  top: 80px;
+  top: 100px;
   left: 30%;
 }
 .app-show-container .app-showcase {
   padding: 0px;
+  width: 50%;
 }
 .app-show-container .app-showcase .app-shocase-text {
   padding: 20px;
@@ -398,6 +401,13 @@
     min-width: 350px;
     min-height: 100px;
   }
+  .app-show-container {
+    justify-content: center;
+  }
+  .app-show-container .app-show-content {
+    width: 90%;
+    margin-bottom: 50px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .banner-container .banner-content .banner-text {
@@ -427,6 +437,51 @@
   }
   .services-container .service-content .service-card {
     width: 100%;
+  }
+  .app-show-container .app-show-content {
+    width: 100%;
+  }
+  .app-show-container .app-show-content .app-image-content .third-tag {
+    top: 65px;
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .app-show-container .app-show-content {
+    width: 100%;
+  }
+  .app-show-container .app-show-content h2,
+.app-show-container .app-show-content h3 {
+    text-align: center;
+  }
+  .app-show-container .app-show-content .app-purpose {
+    flex-direction: column;
+  }
+  .app-show-container .app-show-content .app-purpose .purpose {
+    width: 100%;
+    text-align: center;
+  }
+  .app-show-container .app-show-content .app-image-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-show-container .app-show-content .app-image-content .content-one {
+    width: 100%;
+  }
+  .app-show-container .app-show-content .app-image-content .content-one .phone-image {
+    max-width: 200px;
+    margin-inline: auto;
+  }
+  .app-show-container .app-show-content .app-image-content .first-tag {
+    left: 40%;
+  }
+  .app-show-container .app-show-content .app-image-content .second-tag {
+    right: 5px;
+  }
+  .app-show-container .app-show-content .app-image-content .third-tag {
+    top: 100px;
+    left: 20px;
   }
 }
 @media only screen and (max-width: 350px) {
