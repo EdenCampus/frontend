@@ -1,26 +1,41 @@
 "use strict";
 
 function scrollReviewLeft(){
+    
     var container = Ele(".review-contents .review"),
+        parentContainer = Ele(".review-scroll-box .review-contents"),
         allContainer = All(".review-contents .review"),
         containerWidth = container.getBoundingClientRect().width,
         scrollLength = ((-1 * (containerWidth + 30)) + (allContainer[0].offsetLeft)),
-        fullScrollLength = (containerWidth + 30) * allContainer.length;
+        fullScrollLength = (containerWidth + 30) * allContainer.length,
+        parentWidth = parentContainer.getBoundingClientRect().width;
 
-        if(fullScrollLength + scrollLength < 30){
+        if((-1 * (allContainer[0].offsetLeft - parentWidth)) >= fullScrollLength){
             scrollLength = allContainer[0].offsetLeft;
+
+        }else if((-1 * (allContainer[0].offsetLeft - parentWidth)) < fullScrollLength && (fullScrollLength - (-1 * (allContainer[0].offsetLeft - parentWidth))) < (containerWidth + 30)){
+            console.log("worked")
+            scrollLength = (allContainer[0].offsetLeft - (fullScrollLength - (-1 * (allContainer[0].offsetLeft - parentWidth))) + 30)
 
         }
 
         allContainer[0].style.marginLeft = scrollLength + "px";
 
 
-    console.dir(scrollLength)
+        console.log(allContainer[0].offsetLeft - parentWidth, (containerWidth + 30))
 
 }
 
 function scrollReviewRight(){
 
+}
+
+function resetScroll(){
+
+    var allContainer = All(".review-contents .review");
+
+    allContainer[0].style.marginLeft = "0px";
+    
 }
 
 window.addEventListener("load", ()=>{
@@ -29,5 +44,9 @@ window.addEventListener("load", ()=>{
 
     reviewSlideLeftBtn.addEventListener("click", scrollReviewLeft)
     reviewSideRightBtn.addEventListener("click", scrollReviewRight)
+
+    window.addEventListener("resize", ()=>{
+        resetScroll();
+    })
 
 })
