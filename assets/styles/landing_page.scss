@@ -26,6 +26,7 @@ $single-measurement-seven: 70px;
     width: 100%;
     height: 100vh;
     min-height: 655px;
+    max-height: 655px;
     background: $text-color-one;
     display: flex;
     justify-content: center;
@@ -34,8 +35,10 @@ $single-measurement-seven: 70px;
 
     .banner-content{
         padding: $padding-six;
+        padding-top: calc($single-measurement-seven *2);
         width: 100%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
 
 
@@ -133,6 +136,18 @@ $single-measurement-seven: 70px;
 
 
         }
+
+        .banner-image{
+            width: 40%;
+            max-width: 280px;
+            // border: 1px solid red;
+
+
+            img{
+                width: 100%;
+                // max-height: 100%;
+            }
+        }
     }
 }
 
@@ -172,6 +187,7 @@ $single-measurement-seven: 70px;
         width: 100%;
         margin-top: $single-measurement-five;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         height: auto;
 
@@ -505,5 +521,145 @@ $single-measurement-seven: 70px;
         box-shadow: 0px 0px 10px 20px rgba(0, 0, 0, .03);
     }
 
+
+}
+
+@media only screen and (max-width: 980px){
+
+    .services-container{
+
+        .service-content{
+
+            .service-card{
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .banner-container{
+        max-height: unset;
+        min-height: unset;
+        height: auto;
+
+
+        .banner-content{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: $padding-seven ;
+            padding-top: calc($single-measurement-seven *2);
+
+            .banner-text{
+                width: 90%;
+                margin-bottom: $single-measurement-five;
+            }
+
+            .banner-image{
+                width: 80%;
+                min-width: 350px;
+                min-height: 100px;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .banner-container{
+
+
+        .banner-content{
+
+            .banner-text{
+                width: 100%;
+                text-align: center;
+
+                .banner-header{
+                    font-size: 2rem;
+                }
+
+                .call-to-action{
+
+                    ul{
+
+                        li{
+
+                            a{
+
+                                .icon{
+                                    font-size: 1.2rem;
+                                }
+
+                                .text{
+
+                                    .brand{
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .banner-image{
+                width: 100%;
+                min-width: unset;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 350px){
+    .banner-container{
+
+
+        .banner-content{
+
+            .banner-text{
+                
+                .call-to-action{
+
+
+                    ul{
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        li{
+                            width: auto;
+                            margin-bottom: $single-measurement-two;
+
+                            a{
+
+                                .icon{
+                                    font-size: 1.2rem;
+                                }
+
+                                .text{
+
+                                    .brand{
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        li:not(:first-child){
+                            margin-left: 0px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
 
 }
