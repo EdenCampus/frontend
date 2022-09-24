@@ -409,6 +409,35 @@
     margin-bottom: 50px;
   }
 }
+@media only screen and (max-width: 550px) {
+  .customer-review-container .review-container {
+    padding: 0px;
+    padding-bottom: 60px;
+  }
+  .customer-review-container .review-container .review-scroll-btn {
+    bottom: 0px;
+    top: unset;
+  }
+  .customer-review-container .review-container #review-left-btn {
+    left: 40%;
+    transform: translateX(-50%);
+  }
+  .customer-review-container .review-container #review-right-btn {
+    left: 55%;
+    transform: translateX(-10%);
+  }
+  .customer-review-container .review-container .review-contents .review {
+    min-width: 100%;
+    width: 100%;
+  }
+  .customer-review-container .review-container .review-contents .review .reviewer-details .reviewer-image {
+    margin-right: 10px;
+  }
+  .customer-review-container .review-container .review-contents .review .reviewer-details .review-star-rating {
+    min-width: 75px;
+    margin-left: 10px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .banner-container .banner-content .banner-text {
     width: 100%;
