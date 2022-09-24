@@ -417,6 +417,17 @@
     width: 100%;
     min-width: unset;
   }
+  .services-container .service-header,
+.services-container .subtitle {
+    width: 100%;
+    min-width: unset;
+  }
+  .services-container .service-header {
+    font-size: 1.6rem;
+  }
+  .services-container .service-content .service-card {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 350px) {
   .banner-container .banner-content .banner-text .call-to-action ul {

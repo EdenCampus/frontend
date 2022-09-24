@@ -614,6 +614,27 @@ $single-measurement-seven: 70px;
         }
     }
 
+    .services-container{
+
+        .service-header,
+        .subtitle{
+            width: 100%;
+            min-width: unset;
+
+        }
+
+        .service-header{
+            font-size: 1.6rem;
+        }
+
+        .service-content{
+
+            .service-card{
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 350px){
