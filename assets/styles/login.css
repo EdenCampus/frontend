@@ -28,7 +28,6 @@
 .main .login-container {
   position: relative;
   width: 90vw;
-  min-height: 90vh;
   max-width: 1300px;
   max-height: 657px;
   background: white;
@@ -192,7 +191,7 @@
   min-height: 100%;
 }
 .main .signup-container {
-  max-height: 1100px;
+  max-height: 750px;
   margin: 50px;
 }
 @media only screen and (max-width: 1050px) {
