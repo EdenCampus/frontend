@@ -156,6 +156,13 @@ $single-measurement-seven: 70px;
                         color: $text-color-one;
                     }
 
+                    .password-shown{
+
+                        .eye-slash{
+                            display: none;
+                        }
+                    }
+
                     .password-container{
                         position: relative;
                         margin-top: $single-measurement-two;
@@ -163,6 +170,8 @@ $single-measurement-seven: 70px;
                         input{
                             margin-top: 0px;
                         }
+
+                        
                         button{
                             width: 35px;
                             height: 35px;
@@ -184,6 +193,14 @@ $single-measurement-seven: 70px;
                                 justify-content: center;
                                 align-items: center;
                                 // border: 1px solid red;
+                            }
+                        }
+
+                        input:focus ~ button{
+
+                            span{
+
+                                color: $text-color-one;
                             }
                         }
                     }
