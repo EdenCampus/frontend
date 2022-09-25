@@ -27,9 +27,9 @@
 }
 .main .login-container {
   position: relative;
-  width: 80vw;
+  width: 90vw;
   min-height: 90vh;
-  max-width: 1100px;
+  max-width: 1300px;
   max-height: 657px;
   background: white;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -182,9 +182,43 @@
   width: 60%;
 }
 .main .login-container .login-image img {
+  width: auto;
   min-height: 100%;
 }
 .main .signup-container {
   max-height: 1100px;
   margin: 50px;
+}
+@media only screen and (max-width: 1050px) {
+  .main .login-container .login-form-container,
+.main .login-container .login-image {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .main .login-container .login-form-container {
+    padding: 60px 40px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main .login-container {
+    max-width: 500px;
+  }
+  .main .login-container .login-form-container {
+    border-right: none;
+    width: 100%;
+  }
+  .main .login-container .login-image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main .login-container {
+    width: 90%;
+    max-width: unset;
+  }
+  .main .signup-container {
+    max-height: 1100px;
+    margin: unset;
+  }
 }/*# sourceMappingURL=login.css.map */
