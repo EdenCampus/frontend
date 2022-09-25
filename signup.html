@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Eden Campus Login</title>
+        <title>Eden Campus Register</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.css">
@@ -24,7 +24,7 @@
         <div class="main">
             
 
-            <div class="login-container">
+            <div class="login-container signup-container">
                 
 
                 <div class="login-form-container">
@@ -36,7 +36,7 @@
                         <div class="form-link">
                             <ul>
                                 <li><a href="./index.html">Home</a></li>
-                                <li><a href="./signup.html">Sign up</a></li>
+                                <li><a href="./login.html">Login</a></li>
                             </ul>
 
                         </div>
@@ -44,7 +44,7 @@
 
                     </div>
 
-                    <h2 class="login-title">Account Login</h2>
+                    <h2 class="login-title">Account Sign up</h2>
 
                     <form action="" class="login-form" method="post">
 
@@ -58,7 +58,6 @@
                         <div class="form-content">
 
                             <label for="password">Password  </label>
-
                             <div class="password-container">
                                 <input type="password" class="password" id="password" placeholder="Your password">
                                 <button type="button" class="show-password" data-class="password">
@@ -70,15 +69,31 @@
 
                         </div>
 
-                        <div class="form-content vertical-end">
+                        <div class="form-content">
 
-                            <a href="./forgot_password.html">Forgot password?</a>
+                            <label for="password-repeat">Repeat Password</label>
+                            <div class="password-container">
+                                <input type="password" class="password-repeat" id="password-repeat" placeholder="Repeat password">
+                                <button type="button" class="show-password" data-class="password-repeat">
+                                    <span class="eye-slash"><i class="fa-solid fa-eye-slash"></i></span>
+                                    <span class="eye"><i class="fa-solid fa-eye"></i></span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-content row">
+
+                            <input type="checkbox" name="terms" id="terms">
+
+                            <label for="terms">I accept <a href="./terms"> terms and policy</a></label>
 
                         </div>
 
                         <div class="form-content">
 
-                            <button><span class="text">Sign in</span><span class="icon"><i class="fa-solid fa-sign-in-alt"></i></span></button>
+                            <button><span class="text">Register</span><span class="icon"><i class="fa-solid fa-user-plus"></i></span></button>
 
                         </div>
 

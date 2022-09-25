@@ -63,6 +63,7 @@ $single-measurement-seven: 70px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
         border-radius: 10px;
         display: flex;
+        overflow: hidden;
 
         .login-form-container{
             width: 40%;
@@ -118,7 +119,7 @@ $single-measurement-seven: 70px;
                         color: rgba(0, 0, 0, .7);
                     }
 
-                    input,
+                    input:not([type="checkbox"]),
                     button{
                         width: 100%;
                         height: 40px;
@@ -126,7 +127,7 @@ $single-measurement-seven: 70px;
 
                     }
 
-                    input{
+                    input:not([type="checkbox"]){
                         margin-top: $single-measurement-two;
                         padding: 0px 10px;
                         border: 2px solid rgba(0, 0, 0, .3);
@@ -148,10 +149,66 @@ $single-measurement-seven: 70px;
                             margin-left: 5px;
                         }
                     }
+
+                    button:hover{
+                        background: transparent;
+                        transition: 0.5s ease all;
+                        color: $text-color-one;
+                    }
+
+                    .password-container{
+                        position: relative;
+                        margin-top: $single-measurement-two;
+
+                        input{
+                            margin-top: 0px;
+                        }
+                        button{
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 0px;
+                            position: absolute;
+                            top: 50%;
+                            right: 2px;
+                            background: transparent;
+                            transform: translateY(-50%);
+                            border: none;
+                            
+                            span{
+                                color: rgba(0, 0, 0, .3);
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                top: 0px;
+                                justify-content: center;
+                                align-items: center;
+                                // border: 1px solid red;
+                            }
+                        }
+                    }
                 }
 
                 .vertical-end{
                     align-items: flex-end;
+                }
+
+                .row{
+                    flex-direction: row;
+
+                    input,
+                    label{
+                        width: auto;
+                        margin-top: 0px;
+                    }
+
+                    input{
+                        margin-right: $single-measurement-one;
+                    }
+
+                    label{
+                        font-weight: normal;
+                    }
                 }
 
             }
@@ -205,6 +262,12 @@ $single-measurement-seven: 70px;
             }
         }
     
+    }
+
+    .signup-container{
+        max-height: 1100px;
+        margin: $single-measurement-five;
+        
     }
 }
 
