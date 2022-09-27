@@ -62,6 +62,20 @@ $single-measurement-seven: 70px;
                 color: rgba(255, 255, 255, .8);
             }
 
+            .banner-subtitle{
+                
+                .bold-subtitle{
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+
+                li{
+                    margin-left: $single-measurement-three;
+                    margin-top: $single-measurement-one;
+                    max-width: 500px;
+                }
+            }
+
             .call-to-action{
 
                 ul{
@@ -70,9 +84,9 @@ $single-measurement-seven: 70px;
                     list-style: none;
     
                     li{
-                        background: transparent;
+                        background: $primary-color;
                         border-radius: 10px;
-                        border: 2px solid $text-color-two;
+                        border: 2px solid $primary-color;
     
                         a{
                             display: flex;
@@ -104,17 +118,59 @@ $single-measurement-seven: 70px;
                     }
                     
                     li:hover{
-                        background: $primary-color;
+                        background: transparent;
                         border-color: $primary-color;
                         transition: 0.5s ease all;
     
                         a{
-                            color: $text-color-one;
+                            color: $primary-color;
                             transition: 0.5s ease all;
                         }
                     }
                     li:not(:first-child){
                         margin-left: $single-measurement-two;
+                    }
+                }
+            }
+
+            .total-users{
+                margin-top: $single-measurement-three;
+                display: flex;
+                align-items: center;
+
+                .user-images{
+                    min-width: 70px;
+                    // border: 1px solid red;
+                    margin-right: $single-measurement-one;
+                    display: flex;
+
+
+                    .images{
+                        width: 40px;
+                        height: 40px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+                        background: $text-color-two;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .images:not(:first-child){
+                        margin-left: -20px;
+                    }
+
+                }
+
+                .user-stats{
+                    h3{
+                        font-size: 0.9rem;
+                    }
+
+                    p{
+                        font-size: 0.6rem;
                     }
                 }
             }
@@ -652,13 +708,15 @@ $single-measurement-seven: 70px;
 
             .banner-text{
                 width: 100%;
-                text-align: center;
-
+                
                 .banner-header{
+                    text-align: center;
                     font-size: 2rem;
                 }
 
                 .call-to-action{
+                    display: flex;
+                    justify-content: center;
 
                     ul{
 

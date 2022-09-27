@@ -29,6 +29,9 @@ function scrollReviewLeft(){
 
 }
 
+
+console.log(window.innerWidth);
+
 function scrollReviewRight(){
 
     var container = Ele(".review-contents .review"),

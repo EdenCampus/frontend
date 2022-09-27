@@ -17,6 +17,7 @@ $single-measurement-three: 30px;
 $single-measurement-four: 40px;
 $single-measurement-five: 50px;
 $single-measurement-six: 50px;
+$view-max-width: 1500px;
 
 *{
     padding: 0px;
@@ -38,6 +39,7 @@ button{
     cursor: pointer;
 }
 
+
 @font-face {
     font-family: poppins;
     src: url(../fonts/Poppins-Regular.ttf);
@@ -46,14 +48,18 @@ button{
 body{
     width: 100vw;
     min-height: 100vh;
+    max-width: $view-max-width;
     font-family: poppins;
     overflow-x: hidden;
+    margin-inline: auto;
+    // position: relative;
     // background: tan;
     
     header{
         background: $text-color-one;
         height: $header-height;
         width: 100%;
+        max-width: $view-max-width;
         display: flex;
         color: $text-color-two;
         padding: $padding;
