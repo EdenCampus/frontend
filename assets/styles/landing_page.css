@@ -10,6 +10,13 @@
   color: white;
 }
 .banner-container .banner-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-container .banner {
   padding: 60px 5vw;
   padding-top: 140px;
   width: 100%;
@@ -17,79 +24,79 @@
   align-items: center;
   justify-content: space-between;
 }
-.banner-container .banner-content .banner-text {
+.banner-container .banner .banner-text {
   width: 55%;
   height: auto;
 }
-.banner-container .banner-content .banner-text .banner-header {
+.banner-container .banner .banner-text .banner-header {
   font-size: 2.5rem;
 }
-.banner-container .banner-content .banner-text .subtitle,
-.banner-container .banner-content .banner-text .call-to-action,
-.banner-container .banner-content .banner-text .rating {
+.banner-container .banner .banner-text .subtitle,
+.banner-container .banner .banner-text .call-to-action,
+.banner-container .banner .banner-text .rating {
   margin-top: 30px;
 }
-.banner-container .banner-content .banner-text .subtitle {
+.banner-container .banner .banner-text .subtitle {
   color: rgba(255, 255, 255, 0.8);
 }
-.banner-container .banner-content .banner-text .banner-subtitle .bold-subtitle {
+.banner-container .banner .banner-text .banner-subtitle .bold-subtitle {
   font-weight: bold;
   font-size: 1.3rem;
 }
-.banner-container .banner-content .banner-text .banner-subtitle li {
+.banner-container .banner .banner-text .banner-subtitle li {
   margin-left: 30px;
   margin-top: 10px;
   max-width: 500px;
 }
-.banner-container .banner-content .banner-text .call-to-action ul {
+.banner-container .banner .banner-text .call-to-action ul {
   display: flex;
   list-style: none;
 }
-.banner-container .banner-content .banner-text .call-to-action ul li {
+.banner-container .banner .banner-text .call-to-action ul li {
   background: rgb(211, 145, 58);
   border-radius: 10px;
   border: 2px solid rgb(211, 145, 58);
 }
-.banner-container .banner-content .banner-text .call-to-action ul li a {
+.banner-container .banner .banner-text .call-to-action ul li a {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
   align-items: center;
 }
-.banner-container .banner-content .banner-text .call-to-action ul li a .icon {
+.banner-container .banner .banner-text .call-to-action ul li a .icon {
   font-size: 1.4rem;
   margin-right: 9px;
 }
-.banner-container .banner-content .banner-text .call-to-action ul li a .text .sub-text {
+.banner-container .banner .banner-text .call-to-action ul li a .text .sub-text {
   font-size: 0.8rem;
 }
-.banner-container .banner-content .banner-text .call-to-action ul li a .text .brand {
+.banner-container .banner .banner-text .call-to-action ul li a .text .brand {
   font-size: 1.2rem;
   font-weight: bold;
 }
-.banner-container .banner-content .banner-text .call-to-action ul li:hover {
+.banner-container .banner .banner-text .call-to-action ul li:hover {
   background: transparent;
   border-color: rgb(211, 145, 58);
   transition: 0.5s ease all;
 }
-.banner-container .banner-content .banner-text .call-to-action ul li:hover a {
+.banner-container .banner .banner-text .call-to-action ul li:hover a {
   color: rgb(211, 145, 58);
   transition: 0.5s ease all;
 }
-.banner-container .banner-content .banner-text .call-to-action ul li:not(:first-child) {
+.banner-container .banner .banner-text .call-to-action ul li:not(:first-child) {
   margin-left: 20px;
 }
-.banner-container .banner-content .banner-text .total-users {
+.banner-container .banner .banner-text .total-users {
   margin-top: 30px;
   display: flex;
   align-items: center;
 }
-.banner-container .banner-content .banner-text .total-users .user-images {
+.banner-container .banner .banner-text .total-users .user-images {
   min-width: 70px;
   margin-right: 10px;
   display: flex;
 }
-.banner-container .banner-content .banner-text .total-users .user-images .images {
+.banner-container .banner .banner-text .total-users .user-images .images {
   width: 40px;
   height: 40px;
   overflow: hidden;
@@ -97,33 +104,33 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   background: white;
 }
-.banner-container .banner-content .banner-text .total-users .user-images .images img {
+.banner-container .banner .banner-text .total-users .user-images .images img {
   width: 100%;
 }
-.banner-container .banner-content .banner-text .total-users .user-images .images:not(:first-child) {
+.banner-container .banner .banner-text .total-users .user-images .images:not(:first-child) {
   margin-left: -20px;
 }
-.banner-container .banner-content .banner-text .total-users .user-stats h3 {
+.banner-container .banner .banner-text .total-users .user-stats h3 {
   font-size: 0.9rem;
 }
-.banner-container .banner-content .banner-text .total-users .user-stats p {
+.banner-container .banner .banner-text .total-users .user-stats p {
   font-size: 0.6rem;
 }
-.banner-container .banner-content .banner-text .rating {
+.banner-container .banner .banner-text .rating {
   font-size: 0.9rem;
 }
-.banner-container .banner-content .banner-text .rating .rates {
+.banner-container .banner .banner-text .rating .rates {
   color: green;
   margin: 0px 4px;
 }
-.banner-container .banner-content .banner-text .rating .stars {
+.banner-container .banner .banner-text .rating .stars {
   color: rgb(211, 145, 58);
 }
-.banner-container .banner-content .banner-image {
+.banner-container .banner .banner-image {
   width: 40%;
   max-width: 280px;
 }
-.banner-container .banner-content .banner-image img {
+.banner-container .banner .banner-image img {
   width: 100%;
 }
 

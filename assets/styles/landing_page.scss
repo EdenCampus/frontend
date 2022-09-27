@@ -34,6 +34,15 @@ $single-measurement-seven: 70px;
     color: $text-color-two;
 
     .banner-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner{
         padding: $padding-six;
         padding-top: calc($single-measurement-seven *2);
         width: 100%;
