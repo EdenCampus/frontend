@@ -1,6 +1,6 @@
 "use strict";
 
-function scrollReviewLeft(){
+function scrollReviewRight(){
     
     var container = Ele(".review-contents .review"),
         parentContainer = Ele(".review-scroll-box .review-contents"),
@@ -30,9 +30,9 @@ function scrollReviewLeft(){
 }
 
 
-console.log(window.innerWidth);
+// console.log(window.innerWidth);
 
-function scrollReviewRight(){
+function scrollReviewLeft(){
 
     var container = Ele(".review-contents .review"),
         parentContainer = Ele(".review-scroll-box .review-contents"),
