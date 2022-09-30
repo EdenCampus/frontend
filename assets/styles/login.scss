@@ -105,6 +105,62 @@ $single-measurement-seven: 70px;
                 color: rgba(0, 0, 0, .7);
             }
 
+            .form-steps{
+                width: 100%;
+                position: relative;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                margin-top: $single-measurement-two;
+
+                .step-length{
+                    width: 100%;
+                    height: 8px;
+                    background: #e6e6e6;
+                    border-radius: 10px;
+                    position: relative;
+
+                    .step-percent{
+                        width: 0%;
+                        height: 100%;
+                        background: $primary-color;
+
+                    }
+                }
+
+                .steps{
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: #e6e6e6;
+
+                }
+
+                .active-step{
+                    background: $primary-color;
+                    color: $text-color-two;
+                }
+
+                #step-one{
+                    left: 0px;
+                }
+
+                #step-two{
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                #step-three{
+                    right: 0px;
+                }
+            }
+
             .login-form{
 
                 .form-content{
@@ -156,6 +212,13 @@ $single-measurement-seven: 70px;
                         color: $text-color-one;
                     }
 
+                    button:disabled{
+                        background: #e6e6e6;
+                        color: rgba(0, 0, 0, .5);
+                        border: 2px solid #e6e6e6;
+                    }
+
+
                     .password-shown{
 
                         .eye-slash{
@@ -204,6 +267,220 @@ $single-measurement-seven: 70px;
                             }
                         }
                     }
+
+                    .err{
+                        color: red;
+                        font-size: 0.9rem;
+                        margin-top: 8px;
+                        animation: 1s ease forwards;
+                    }
+
+                    .form-inner-container{
+                        position: relative;
+                        width: 100%;
+                        // border: 1px solid red;
+                        margin-top: $single-measurement-two;
+
+                        input{
+                            margin-top: 0px;
+
+                        }
+                    }
+
+                    .loader{
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        border: 2px dashed rgba(0, 0, 0, .3);
+                        border-radius: 50%;
+                        right: 10px;
+                        z-index: 9;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        animation: rotateContainer ease 1s infinite;
+                        display: none;
+                    }
+
+                    .completed-search{
+                        position: absolute;
+                        right: 10px;
+                        color: green;
+                        z-index: 9;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        display: none;
+                    }
+
+                    .active-loader{
+                        display: flex;
+                    }
+
+                    .completed{
+                        display: flex;
+                    }
+
+                    @keyframes rotateContainer {
+
+                        from{
+                            transform: translateY(-50%) rotateZ(0deg);
+                        }
+
+                        from{
+                            transform: translateY(-50%) rotateZ(-360deg);
+                        }
+                        
+                    }
+
+                    @keyframes shake {
+                        0% { transform: translate(1px, 1px) rotate(0deg); }
+                        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                        20% { transform: translate(-3px, 0px) rotate(1deg); }
+                        30% { transform: translate(3px, 2px) rotate(0deg); }
+                        40% { transform: translate(1px, -1px) rotate(1deg); }
+                        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                        60% { transform: translate(-3px, 1px) rotate(0deg); }
+                        70% { transform: translate(3px, 1px) rotate(-1deg); }
+                        80% { transform: translate(-1px, -1px) rotate(1deg); }
+                        90% { transform: translate(1px, 2px) rotate(0deg); }
+                        100% { transform: translate(1px, -2px) rotate(-1deg); }
+                      }
+                }
+
+                .school-search-result{
+                    margin-top: $single-measurement-three;
+                    max-height: 300px;
+                    overflow-y: scroll;
+                    padding: 10px;
+                    scrollbar-width: thin;
+                    scrollbar-track-color: #e6e6e6;
+                    scrollbar-color: black;
+                    // border: 1px solid red;
+
+                    .school{
+                        width: 100%;
+                        // padding: 10px;
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        max-height: 100px;
+                        cursor: pointer;
+                        // justify-content: space-between;
+                        position: relative;
+
+                        .custom-radio-btn{
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            border: 3px solid #e6e6e6;
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .btn{
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+                                background: transparent;
+                            }
+
+                        }
+
+                        #selected-school{
+                            opacity: 0;
+                            position: absolute;
+
+                        }
+                        
+                        .school-logo{
+                            background: rgba(0, 0, 0, .1);
+                            width: 100px;
+                            height: 100px;
+                            // border-radius: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img{
+                                width: 50%;
+                            }
+                        }
+
+                        .school-details{
+                            max-width: calc(100% - 100px);
+                            margin-left: $single-measurement-two;
+                            margin-right: $single-measurement-one;
+
+                            h3{
+                                margin-top: 8px;
+                                font-size: 1rem;
+                            }
+
+                            p{
+                                margin-top: 5px;
+                                color: rgba(0, 0, 0, .7);
+                                font-size: 0.9rem;
+                                font-style: italic;
+
+                                .icon{
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .school:not(:first-child){
+                        margin-top: $single-measurement-three;
+                    }
+
+                    .selected{
+                        border: 2px solid $primary-color;
+                        box-shadow: unset;
+
+                        .school-details{
+
+                            .custom-radio-btn{
+                                background: $primary-color;
+
+                                .btn{
+
+                                    background: $primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .school-search-result::-webkit-scrollbar{
+                    background:rgba(0, 0, 0, .1);
+                    width: 5px;
+                }
+
+                .school-search-result::-webkit-scrollbar-track{
+                    background: #e6e6e6;
+                }
+                
+                .school-search-result::-webkit-scrollbar-thumb{
+                    color: black;
+                    background: black;
+                    border-radius: 10px;
+                }
+
+                .school-search-container{
+                    display: block;
+                }
+
+                .email-registration{
+                    display: none;
+                }
+
+                .final-registration{
+                    display: none;
                 }
 
                 .vertical-end{
@@ -283,7 +560,7 @@ $single-measurement-seven: 70px;
     }
 
     .signup-container{
-        max-height: 750px;
+        max-height: 850px;
         margin: $single-measurement-five;
         
     }
