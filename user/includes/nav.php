@@ -28,7 +28,7 @@
 
             <div class="profile-details-text">
                 <p class="name">Duyil Ayomid</p>
-                <p class="time">26.09.2022</p>
+                <p class="time"><?php echo date("d.m.Y") ?></p>
             </div>
         </div>
 

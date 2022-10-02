@@ -185,6 +185,52 @@
   background: rgba(255, 255, 255, 0.8);
   transition: 0.5s ease all;
 }
+.main-side-content .transaction-notification .notification-header {
+  display: flex;
+  align-items: center;
+}
+.main-side-content .transaction-notification .notification-header h4 {
+  font-weight: 1.3rem;
+  margin-right: 10px;
+}
+.main-side-content .transaction-notification .notification-header button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-left: 5px;
+}
+.main-side-content .transaction-notification .notification-list .notification-card {
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+}
+.main-side-content .transaction-notification .notification-list .notification-card a {
+  font-weight: bold;
+  position: relative;
+}
+.main-side-content .transaction-notification .notification-list .notification-card a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgb(211, 145, 58);
+  left: 0px;
+  bottom: -2px;
+}
+.main-side-content .transaction-notification .notification-list .notification-card .notification-icon {
+  background: #e6e6e6;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.7);
+}
 
 .main-side-content:not(:first-child) {
   margin-top: 50px;

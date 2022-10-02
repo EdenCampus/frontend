@@ -263,6 +263,55 @@ error_reporting(E_ALL);
 
                         </div>
 
+                        <div class="contents transaction-notification">
+
+
+                            <div class="notification-header">
+
+                                <h4>Notifications</h4>
+
+                                <button class="edit-notification-btn"><i class="fa-solid fa-pen"></i></button>
+
+                            </div>
+
+                            <div class="notification-list">
+
+                                <div class="notification-card">
+
+                                    <div class="notification-icon">
+
+                                        <i class="fa-solid fa-arrow-down"></i>
+
+                                    </div>
+
+                                    <div class="notification-message">
+
+                                        <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="notification-card">
+
+                                    <div class="notification-icon">
+
+                                        <i class="fa-solid fa-arrow-up"></i>
+
+                                    </div>
+
+                                    <div class="notification-message">
+
+                                        <p class="message">you sent a sum of &#8358; <?php echo format_price("1000"); ?> to <a href="./">Hooli</a> </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>

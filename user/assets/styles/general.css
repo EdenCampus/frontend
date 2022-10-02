@@ -19,7 +19,6 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  padding-inline: 10vw;
   background: url("../images/white_background.jpg") no-repeat;
   background-size: cover;
 }
