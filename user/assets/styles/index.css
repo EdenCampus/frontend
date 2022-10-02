@@ -1,1 +1,120 @@
-/*# sourceMappingURL=index.css.map */
+.main-side-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-side-content h1 {
+  font-size: 1.5rem;
+}
+.main-side-content .last-update {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+.main-side-content .last-update .update-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: darkgreen;
+  margin-right: 4px;
+}
+.main-side-content .contents {
+  width: 45%;
+}
+.main-side-content .balance-card .balance-title,
+.main-side-content .balance-card .balance,
+.main-side-content .balance-card .balance-actions {
+  margin-top: 15px;
+}
+.main-side-content .balance-card .balance-title {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.main-side-content .balance-card .balance .currency-icon {
+  color: rgb(211, 145, 58);
+}
+.main-side-content .balance-card .balance-actions {
+  display: flex;
+}
+.main-side-content .balance-card .balance-actions button {
+  background: #e6e6e6;
+  border: 2px solid #e6e6e6;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+.main-side-content .balance-card .balance-actions .add-button {
+  background: black;
+  color: white;
+}
+.main-side-content .balance-card .balance-actions button:not(:first-child) {
+  margin-left: 10px;
+}
+.main-side-content .action-card .action-content {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.main-side-content .action-card .action-content .action {
+  display: flex;
+  font-size: 0.85rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: none;
+  background: #f0f0f0;
+}
+.main-side-content .action-card .action-content .action .icon {
+  margin-bottom: 5px;
+}
+.main-side-content .action-card .action-content .action .history-image {
+  padding: 4px;
+  width: 50px;
+  height: 50px;
+}
+.main-side-content .action-card .action-content .action .history-image .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main-side-content .action-card .action-content .action .history-text {
+  padding: 5px;
+}
+.main-side-content .action-card .action-content .action-link {
+  min-width: 60px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.main-side-content .action-card .action-content .action-link:not(:first-child) {
+  margin-left: 10px;
+}
+.main-side-content .action-card .transaction-action {
+  justify-content: space-between;
+}
+.main-side-content .action-card .transaction-history {
+  margin-left: 10%;
+  overflow-x: scroll;
+  scrollbar-color: white;
+  scrollbar-width: thin;
+  scrollbar-track-color: rgba(255, 255, 255, 0.2);
+}
+.main-side-content .action-card .transaction-history::-webkit-scrollbar {
+  height: 3px;
+}
+.main-side-content .action-card .transaction-history::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+.main-side-content .action-card .transaction-history::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+}
+.main-side-content .action-card .action-content:not(:first-child) {
+  margin-top: 20px;
+}
+
+.main-side-content:not(:first-child) {
+  margin-top: 20px;
+}/*# sourceMappingURL=index.css.map */

@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-inline: 10vw;
-  background: url("../images/grey_background.jpg") no-repeat;
+  background: url("../images/white_background.jpg") no-repeat;
   background-size: cover;
 }
 body a {
@@ -250,7 +250,7 @@ body .main-body .main-side header .header-icon .link-btn li button {
 body .main-body .main-side header .header-icon .link-btn li:not(:first-child) {
   margin-left: 8px;
 }
-body .main-body .main-side .main-side-content {
+body .main-body .main-side .main-side-container {
   height: calc(100% - 60px);
   padding: 20px;
 }/*# sourceMappingURL=general.css.map */

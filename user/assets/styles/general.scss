@@ -33,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-inline: 10vw;
-    background: url("../images/grey_background.jpg") no-repeat;
+    background: url("../images/white_background.jpg") no-repeat;
     background-size: cover;
 
     a{
@@ -344,9 +344,11 @@ body{
 
             }
 
-            .main-side-content{
+            .main-side-container{
                 height: calc(100% - $header-height);
                 padding: $padding-one;
+
+                
             }
         }
 
