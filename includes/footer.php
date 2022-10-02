@@ -29,10 +29,10 @@
                 <div class="footer-links">
                     <ul>
 
-                        <li><a href="./pages/service.html">Service</a></li>
-                        <li><a href="./pages/project.html">Projects</a></li>
-                        <li><a href="./pages/pricing.html">Pricing</a></li>
-                        <li><a href="./pages/contact.html">Contact us</a></li>
+                        <li><a href="./pages/service.php">Service</a></li>
+                        <li><a href="./pages/project.php">Projects</a></li>
+                        <li><a href="./pages/pricing.php">Pricing</a></li>
+                        <li><a href="./pages/contact.php">Contact us</a></li>
 
                     </ul>
                 </div>
@@ -40,8 +40,8 @@
                 <div class="footer-links">
                     <ul>
 
-                        <li><a href="./login.html">login</a></li>
-                        <li class="background-link"><a href="./singnup.html">Sign up</a></li>
+                        <li><a href="./login.php">login</a></li>
+                        <li class="background-link"><a href="./singnup.php">Sign up</a></li>
 
                     </ul>
                 </div>

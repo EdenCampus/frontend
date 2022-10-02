@@ -10,10 +10,10 @@
 
                 <ul>
 
-                    <li><a href="./pages/service.html">Services</a></li>
-                    <li><a href="./pages/project.html">Projects</a></li>
-                    <li><a href="./pages/pricing.html">Pricing</a></li>
-                    <li><a href="./pages/contact.html">Contact us</a></li>
+                    <li><a href="./pages/service.php">Services</a></li>
+                    <li><a href="./pages/project.php">Projects</a></li>
+                    <li><a href="./pages/pricing.php">Pricing</a></li>
+                    <li><a href="./pages/contact.php">Contact us</a></li>
 
                 </ul>
 
@@ -23,8 +23,8 @@
 
                 <ul>
 
-                    <li><a href="./signup.html">Sign up</a></li>
-                    <li class="background-link"><a href="./login.html">Login</a></li>
+                    <li><a href="./signup.php">Sign up</a></li>
+                    <li class="background-link"><a href="./login.php">Login</a></li>
 
                 </ul>
 
