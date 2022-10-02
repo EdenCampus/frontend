@@ -49,6 +49,160 @@ body .main-body .nav-side {
   min-width: 250px;
   background: rgb(27, 28, 33);
   height: 100%;
+  color: white;
+  overflow-y: scroll;
+  scrollbar-color: white;
+  scrollbar-width: thin;
+  scrollbar-track-color: rgba(255, 255, 255, 0.2);
+}
+body .main-body .nav-side nav {
+  padding: 40px 0px;
+  width: 100;
+  height: 100%;
+  display: block;
+}
+body .main-body .nav-side nav .nav-header {
+  display: flex;
+  position: relative;
+  padding: 0px 30px;
+}
+body .main-body .nav-side nav .nav-header .logo {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0px 20px;
+}
+body .main-body .nav-side nav .nav-header .adjust-nav-btn {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 10px 5px;
+  color: rgba(255, 255, 255, 0.7);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+body .main-body .nav-side nav .nav-profile {
+  width: 100%;
+  padding: 30px;
+}
+body .main-body .nav-side nav .nav-profile .profile-details {
+  width: 100%;
+  display: flex;
+  border-radius: 18px;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+body .main-body .nav-side nav .nav-profile .profile-details .profile-details-image {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+body .main-body .nav-side nav .nav-profile .profile-details .profile-details-image .image {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+body .main-body .nav-side nav .nav-profile .profile-details .profile-details-text .name {
+  font-weight: bold;
+}
+body .main-body .nav-side nav .nav-profile .profile-details .profile-details-text .time {
+  color: rgba(255, 255, 255, 0.6);
+}
+body .main-body .nav-side nav .nav-link {
+  padding: 30px;
+}
+body .main-body .nav-side nav .nav-link ul {
+  list-style: none;
+}
+body .main-body .nav-side nav .nav-link ul li {
+  display: block;
+}
+body .main-body .nav-side nav .nav-link ul li a {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+body .main-body .nav-side nav .nav-link ul li a .icon {
+  margin-right: 10px;
+}
+body .main-body .nav-side nav .nav-link ul .link {
+  width: 100%;
+}
+body .main-body .nav-side nav .nav-link ul .link .link-container a {
+  padding: 15px;
+  display: block;
+  border-radius: 10px;
+}
+body .main-body .nav-side nav .nav-link ul .link .link-container a .link-icon .close-icon {
+  display: none;
+}
+body .main-body .nav-side nav .nav-link ul .link .link-container .dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+}
+body .main-body .nav-side nav .nav-link ul .link .dropdown-container {
+  margin-top: 10px;
+  height: 0px;
+  overflow: hidden;
+}
+body .main-body .nav-side nav .nav-link ul .link .dropdown-container li {
+  position: relative;
+  padding-left: 20px;
+}
+body .main-body .nav-side nav .nav-link ul .link .dropdown-container li a {
+  display: block;
+  position: relative;
+  padding: 17px 10px;
+  margin-left: 20px;
+  z-index: 9;
+  background: rgb(27, 28, 33);
+  color: rgba(255, 255, 255, 0.7);
+}
+body .main-body .nav-side nav .nav-link ul .link .dropdown-container li::before {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom-left-radius: 18px;
+  top: -50%;
+}
+body .main-body .nav-side nav .nav-link ul .link .dropdown-container li:first-child::before {
+  height: 65%;
+  top: -10px;
+}
+body .main-body .nav-side nav .nav-link ul .link .dropdown-container li:not(:first-child)::before {
+  height: 128%;
+  top: -81%;
+}
+body .main-body .nav-side nav .nav-link ul .link:not(:first-child) {
+  margin-top: 15px;
+}
+body .main-body .nav-side nav .nav-link ul .background-link .link-container a {
+  background: rgb(211, 145, 58);
+}
+body .main-body .nav-side::-webkit-scrollbar {
+  width: 1px;
+}
+body .main-body .nav-side:hover::-webkit-scrollbar {
+  width: 5px;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+body .main-body .nav-side::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+body .main-body .nav-side::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
 }
 body .main-body .main-side {
   width: 75%;
@@ -75,8 +229,8 @@ body .main-body .main-side header .welcome-message .profile-details {
   align-items: center;
 }
 body .main-body .main-side header .welcome-message .profile-details .image {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   margin-right: 8px;
