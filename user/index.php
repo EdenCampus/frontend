@@ -10,12 +10,34 @@
         <title>Eden Dashboard</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./assets/styles/general.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div class="main-body">
+
+
+            <div class="nav-side">
+
+                <?php include_once("./includes/nav.php") ?>
+
+            </div>
+            <div class="main-side">
+
+                <?php include_once("./includes/header.php") ?>
+
+                <div class="main-side-content">
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+
         
         <script src="" async defer></script>
     </body>
