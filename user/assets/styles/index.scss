@@ -168,8 +168,102 @@ $nav-color: rgb(27,28,33);
             margin-top: 20px;
         }
     }
+
+    .transaction-list{
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+        border-radius: 5px;
+        font-size: 0.9rem;
+        padding: 15px 0px;
+        
+        .transaction-list-header{
+            padding: 0px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .header-action-btn{
+                display: flex;
+
+                button{
+                    background: #e6e6e6;
+                    border: none;
+                    font-size: 0.8rem;
+                    border-radius: 3px;
+                }
+
+                button:not(:first-child){
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .count{
+            color: rgba(0, 0, 0, .7);
+            margin-top: 10px;
+            padding: 0px 15px;
+        }
+
+        .transactions{
+
+            .transaction-card{
+                display: flex;
+                padding: 15px;
+                align-items: center;
+                justify-content: space-between;
+
+                .transaction-card-details{
+                    display: flex;
+                    align-items: center;
+
+                    .transaction-card-image{
+                        width: 30px;
+                        height: 30px;
+                        overflow: hidden;
+                        border-radius: 3px;
+                        margin-right: 20px;
+                    }
+    
+                    .transaction-card-text{
+    
+                        h4{
+                            font-weight: bold;
+                            color: $default-color;
+                        }
+    
+                        p{
+                            color: rgba(0, 0, 0, .7);
+                        }
+                    }
+                }
+
+                .price-tag{
+                    display: block;
+                    padding: 3px 5px;
+                    background: #e6e6e6;
+                    border-radius: 2px;
+                }
+
+                .withdrawn{
+                    background: rgba(255, 51, 51, .2);
+                    color: rgb(204, 0, 0);
+                }
+
+                .received{
+                    background: rgba(51, 255, 51, .2);
+                    color: rgb(0, 190, 0);
+                }
+
+            }
+
+            .transaction-card:hover{
+                background: rgba(255, 255, 255, .8);
+                transition: 0.5s ease all;
+
+            }
+        }
+    }
 }
 
 .main-side-content:not(:first-child){
-    margin-top: 20px;
+    margin-top: 50px;
 }

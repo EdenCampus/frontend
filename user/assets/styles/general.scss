@@ -56,8 +56,8 @@ body{
         max-width: $max-width;
         height: 100vh;
         max-height: 657px;
-        backdrop-filter: blur(15px);
-        background: rgba(255, 255, 255, .6);
+        backdrop-filter: blur(25px);
+        background: rgba(255, 255, 255, .7);
         // background-color: red;
         display: flex;
 
@@ -347,8 +347,30 @@ body{
             .main-side-container{
                 height: calc(100% - $header-height);
                 padding: $padding-one;
+                overflow-y: scroll;
+                scrollbar-color: white;
+                scrollbar-width: thin;
+                scrollbar-track-color: rgba(255, 255, 255, .2);
 
                 
+            }
+
+            .main-side-container::-webkit-scrollbar{
+                width: 1px;
+            }
+    
+            .main-side-container:hover::-webkit-scrollbar{
+                width: 5px;
+                transition: 0.5s ease all;
+            }
+    
+    
+            .main-side-container::-webkit-scrollbar-track{
+                background: rgba(0, 0, 0, .1);
+            }
+    
+            .main-side-container::-webkit-scrollbar-thumb{
+                background: rgba(0, 0, 0, .3);
             }
         }
 
