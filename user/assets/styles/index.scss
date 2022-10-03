@@ -42,6 +42,10 @@ $nav-color: rgb(27,28,33);
 
     .balance-card{
         // border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
 
         .balance-title,
         .balance,
@@ -141,18 +145,28 @@ $nav-color: rgb(27,28,33);
             }
 
             .withdraw-action{
+                color: green;
+            }
 
-                .icon{
-                    color: green;
 
-                }
+            .bills-action{
+                color: #33adff;
+            }
+            
+            .food-action{
+                color: #5cd65c;
+            }
+
+            .store-action{
+                color: #b35900;
             }
 
             .action-link{
                 min-width: 60px;
-                border-top-left-radius: 25px;
-                border-top-right-radius: 25px;
+                // border-top-left-radius: 25px;
+                // border-top-right-radius: 25px;
                 background: #e6e6e6;
+                color: rgba(0, 0, 0, .7);
             }
 
             .action-link:not(:first-child){
@@ -346,8 +360,8 @@ $nav-color: rgb(27,28,33);
     }
 }
 
-.main-side-content:not(:first-child){
-    margin-top: 50px;
+.main-side-content:not(:last-child){
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 800px){
@@ -385,6 +399,7 @@ $nav-color: rgb(27,28,33);
 
         flex-direction: column;
         justify-content: center;
+        // border: 1px solid red;
         align-items: center;
 
         .contents{
@@ -393,7 +408,8 @@ $nav-color: rgb(27,28,33);
 
         .balance-card{
             // border: 1px solid red;
-            text-align: center;
+            // text-align: center;
+            align-items: center;
 
             .balance-title{
                 margin-top: 0px;
@@ -434,7 +450,7 @@ $nav-color: rgb(27,28,33);
         display: none;
     }
 
-    .main-side-content:not(:first-child){
-        margin-top: 20px;
+    .main-side-content:not(:last-child){
+        margin-bottom: 20px;   
     }
 }

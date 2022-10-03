@@ -45,7 +45,7 @@ error_reporting(E_ALL);
 
                         <h1 class="content-header">Overview</h1>
 
-                        <p class="last-update"><span class="update-dot"></span><span class="update-text">Updated 5 mins ago</span> </p>
+                        <p class="last-update"><span class="update-dot"></span><span class="update-text"><?php echo date("d F Y") ?></span> </p>
 
                     </div>
 
@@ -55,7 +55,7 @@ error_reporting(E_ALL);
 
                             <p class="balance-title">Balance</p>
 
-                            <h1 class="balance"><span class="currency-icon">&#8358;</span> <span class="price">3000</span></h1>
+                            <h1 class="balance"><span class="currency-icon">&#8358;</span> <span class="price"><?php echo format_price("3000") ?></span></h1>
 
                             <div class="balance-actions">
 
@@ -70,7 +70,7 @@ error_reporting(E_ALL);
 
                             <div class="action-content transaction-action">
 
-                                    <a class="action bill-action">
+                                    <a class="action bills-action">
 
                                         <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
 
@@ -170,6 +170,36 @@ error_reporting(E_ALL);
 
                                 </a>
 
+                                <a href="./" class="action action-link">
+
+                                    <div class="history-image">
+
+                                    <div class="image">
+
+                                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="">
+                                    </div>
+
+
+                                    </div>
+
+                                    <p class="history-text">@olawale</p>
+
+                                </a>
+                                <a href="./" class="action action-link">
+
+                                    <div class="history-image">
+
+                                    <div class="image">
+
+                                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="">
+                                    </div>
+
+
+                                    </div>
+
+                                    <p class="history-text">@olawale</p>
+
+                                </a>
                                 <a href="./" class="action action-link">
 
                                     <div class="history-image">
