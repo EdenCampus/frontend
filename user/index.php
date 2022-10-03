@@ -19,6 +19,7 @@ error_reporting(E_ALL);
         <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.css">
         <link rel="stylesheet" href="./assets/styles/general.css">
         <link rel="stylesheet" href="./assets/styles/index.css">
+        <script src="../assets/plugins/lottie_player/lottie-player.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -38,6 +39,8 @@ error_reporting(E_ALL);
                 <?php require_once("./includes/header.php") ?>
 
                 <div class="main-side-container">
+
+                <!-- <lottie-player src="./assets/images/lf30_editor_pbbz61tg.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
 
                     <!-- main page content goes here -->
 
