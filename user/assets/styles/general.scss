@@ -516,5 +516,15 @@ body{
             }
         }
     }
+
+    @media only screen and (max-width: 520px){
+        .main-body{
+            // max-height: unset;
+            // height: auto;
+            max-height: 100vh;
+            min-height: 100vh;
+        }
+
+    }
 }
 

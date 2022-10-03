@@ -41,7 +41,7 @@ error_reporting(E_ALL);
 
                     <!-- main page content goes here -->
 
-                    <div class="main-side-content">
+                    <div class="main-side-content d-mobile-none">
 
                         <h1 class="content-header">Overview</h1>
 
@@ -53,9 +53,9 @@ error_reporting(E_ALL);
 
                         <div class="contents balance-card">
 
-                            <p class="balance-title">Today's Balance</p>
+                            <p class="balance-title">Balance</p>
 
-                            <h1 class="balance"><span class="currency-icon">&#8358;</span> <span class="price"><?php echo format_price("30000"); ?></span></h1>
+                            <h1 class="balance"><span class="currency-icon">&#8358;</span> <span class="price">3000</span></h1>
 
                             <div class="balance-actions">
 

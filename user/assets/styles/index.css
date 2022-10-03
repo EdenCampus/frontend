@@ -50,9 +50,12 @@
 .main-side-content .balance-card .balance-actions button:not(:first-child) {
   margin-left: 10px;
 }
+.main-side-content .action-card {
+  width: 50%;
+}
 .main-side-content .action-card .action-content {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -96,7 +99,6 @@
   justify-content: space-between;
 }
 .main-side-content .action-card .transaction-history {
-  margin-left: 10%;
   overflow-x: scroll;
   scrollbar-color: white;
   scrollbar-width: thin;
@@ -246,12 +248,6 @@
     padding: 10px 15px;
     font-size: 0.9rem;
   }
-  .main-side-content .action-card .action-content {
-    width: 95%;
-  }
-  .main-side-content .action-card .transaction-history {
-    margin-left: 5%;
-  }
 }
 @media only screen and (max-width: 520px) {
   .main-side-content {
@@ -262,9 +258,6 @@
   .main-side-content .contents {
     width: 100%;
   }
-  .main-side-content .last-update {
-    margin-top: 5px;
-  }
   .main-side-content .balance-card {
     text-align: center;
   }
@@ -273,6 +266,15 @@
     font-weight: bold;
     font-size: 1rem;
     color: black;
+  }
+  .main-side-content .balance-card .balance {
+    font-size: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .main-side-content .balance-card .balance .currency-icon {
+    font-size: 1.8rem;
   }
   .main-side-content .balance-card .balance-actions {
     justify-content: center;
@@ -288,6 +290,9 @@
   }
   .main-side-content .transaction-notification {
     margin-top: 20px;
+  }
+  .d-mobile-none {
+    display: none;
   }
   .main-side-content:not(:first-child) {
     margin-top: 20px;

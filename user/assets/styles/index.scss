@@ -41,6 +41,7 @@ $nav-color: rgb(27,28,33);
     }
 
     .balance-card{
+        // border: 1px solid red;
 
         .balance-title,
         .balance,
@@ -85,10 +86,11 @@ $nav-color: rgb(27,28,33);
 
     .action-card{
         // border: 1px solid red;
+        width: 50%;
 
         .action-content{
             display: flex;
-            width: 90%;
+            width: 100%;
             // border: 1px solid red;
             padding: 10px;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
@@ -144,7 +146,6 @@ $nav-color: rgb(27,28,33);
         }
 
         .transaction-history{
-            margin-left: 10%;
             overflow-x: scroll;
             scrollbar-color: white;
             scrollbar-width: thin;
@@ -356,16 +357,7 @@ $nav-color: rgb(27,28,33);
             }
         }
         
-        .action-card{
-           
-            .action-content{
-                width: 95%;
-            }
-
-            .transaction-history{
-                margin-left: 5%;
-            }
-        }
+        
     }
 }
 
@@ -380,10 +372,6 @@ $nav-color: rgb(27,28,33);
             width: 100%;
         }
 
-        .last-update{
-            margin-top: 5px;
-        }
-
         .balance-card{
             // border: 1px solid red;
             text-align: center;
@@ -393,6 +381,17 @@ $nav-color: rgb(27,28,33);
                 font-weight: bold;
                 font-size: 1rem;
                 color: $default-color;
+            }
+
+            .balance{
+                font-size: 3rem;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+
+                .currency-icon{
+                    font-size: 1.8rem;
+                }
             }
 
             .balance-actions{
@@ -417,6 +416,10 @@ $nav-color: rgb(27,28,33);
         .transaction-notification{
             margin-top: 20px;
         }
+    }
+
+    .d-mobile-none{
+        display: none;
     }
 
     .main-side-content:not(:first-child){

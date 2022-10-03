@@ -357,4 +357,10 @@ body .main-body .main-side .main-side-container::-webkit-scrollbar-thumb {
   body .main-body .main-side {
     width: 100%;
   }
+}
+@media only screen and (max-width: 520px) {
+  body .main-body {
+    max-height: 100vh;
+    min-height: 100vh;
+  }
 }/*# sourceMappingURL=general.css.map */
