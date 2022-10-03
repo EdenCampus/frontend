@@ -322,6 +322,7 @@ error_reporting(E_ALL);
 
 
         
-        <script src="" async defer></script>
+        <script src="../assets/scripts/functions.js" async></script>
+        <script src="./assets/scripts/index.js" defer></script>
     </body>
 </html>

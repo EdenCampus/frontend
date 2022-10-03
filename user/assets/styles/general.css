@@ -53,6 +53,8 @@ body .main-body .nav-side {
   scrollbar-color: white;
   scrollbar-width: thin;
   scrollbar-track-color: rgba(255, 255, 255, 0.2);
+  transition: 0.5s ease all;
+  overflow: hidden;
 }
 body .main-body .nav-side nav {
   padding: 40px 0px;
@@ -83,6 +85,9 @@ body .main-body .nav-side nav .nav-header .adjust-nav-btn {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+body .main-body .nav-side nav .nav-header .adjust-nav-btn .close-icon {
+  display: none;
+}
 body .main-body .nav-side nav .nav-profile {
   width: 100%;
   padding: 30px;
@@ -94,6 +99,7 @@ body .main-body .nav-side nav .nav-profile .profile-details {
   align-items: center;
   padding: 10px;
   background: rgba(255, 255, 255, 0.1);
+  color: white;
 }
 body .main-body .nav-side nav .nav-profile .profile-details .profile-details-image {
   width: 50px;
@@ -132,6 +138,9 @@ body .main-body .nav-side nav .nav-link ul li a {
 body .main-body .nav-side nav .nav-link ul li a .icon {
   margin-right: 10px;
 }
+body .main-body .nav-side nav .nav-link ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 body .main-body .nav-side nav .nav-link ul .link {
   width: 100%;
 }
@@ -151,6 +160,7 @@ body .main-body .nav-side nav .nav-link ul .link .dropdown-container {
   margin-top: 10px;
   height: 0px;
   overflow: hidden;
+  transition: 0.5s ease all;
 }
 body .main-body .nav-side nav .nav-link ul .link .dropdown-container li {
   position: relative;
@@ -189,6 +199,71 @@ body .main-body .nav-side nav .nav-link ul .link:not(:first-child) {
 body .main-body .nav-side nav .nav-link ul .background-link .link-container a {
   background: rgb(211, 145, 58);
 }
+body .main-body .shrinked nav .nav-header {
+  padding: 0px 10px;
+}
+body .main-body .shrinked nav .nav-header .logo {
+  width: 30px;
+  height: 30px;
+}
+body .main-body .shrinked nav .nav-header .adjust-nav-btn {
+  background: rgba(255, 255, 255, 0.2);
+}
+body .main-body .shrinked nav .nav-header .adjust-nav-btn .open-icon {
+  display: none;
+}
+body .main-body .shrinked nav .nav-header .adjust-nav-btn .close-icon {
+  display: block;
+}
+body .main-body .shrinked nav .nav-profile {
+  padding: 30px 10px;
+}
+body .main-body .shrinked nav .nav-profile .profile-details {
+  padding: 5px 0px;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+body .main-body .shrinked nav .nav-profile .profile-details .profile-details-image {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin-right: 0px;
+}
+body .main-body .shrinked nav .nav-profile .profile-details .profile-details-text {
+  display: none;
+}
+body .main-body .shrinked nav .nav-profile .profile-details .profile-details-text .name {
+  font-size: 0.87rem;
+}
+body .main-body .shrinked nav .nav-link {
+  padding: 30px 10px;
+}
+body .main-body .shrinked nav .nav-link ul li a .icon {
+  margin-right: 0px;
+  font-size: 1.2rem;
+}
+body .main-body .shrinked nav .nav-link ul li a .text {
+  display: none;
+}
+body .main-body .shrinked nav .nav-link ul li a .link-icon {
+  display: none;
+}
+body .main-body .shrinked nav .nav-link ul .link .link-container a {
+  padding: 0px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-body .shrinked nav .nav-link ul .link .link-container .dropdown-btn {
+  justify-content: center;
+}
+body .main-body .shrinked nav .nav-link ul link:not(:first-child) {
+  margin-top: 10px;
+}
 body .main-body .nav-side::-webkit-scrollbar {
   width: 1px;
 }
@@ -206,6 +281,7 @@ body .main-body .nav-side::-webkit-scrollbar-thumb {
 body .main-body .main-side {
   width: 75%;
   height: 100%;
+  transition: 0.5s ease all;
 }
 body .main-body .main-side header {
   height: 60px;
@@ -246,6 +322,9 @@ body .main-body .main-side header .header-icon .link-btn li button {
   border: none;
   font-size: 1.3rem;
 }
+body .main-body .main-side header .header-icon .link-btn li .colored {
+  color: rgb(211, 145, 58);
+}
 body .main-body .main-side header .header-icon .link-btn li:not(:first-child) {
   margin-left: 8px;
 }
@@ -270,4 +349,12 @@ body .main-body .main-side .main-side-container::-webkit-scrollbar-track {
 }
 body .main-body .main-side .main-side-container::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 1000px) {
+  body .main-body .nav-side {
+    display: none;
+  }
+  body .main-body .main-side {
+    width: 100%;
+  }
 }/*# sourceMappingURL=general.css.map */

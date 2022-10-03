@@ -7,6 +7,7 @@
         <button class="adjust-nav-btn">
 
             <span class="open-icon"><i class="fa-solid fa-angle-left"></i></span>
+            <span class="close-icon"><i class="fa-solid fa-angle-right"></i></span>
 
         </button>
 
@@ -14,7 +15,7 @@
 
     <div class="nav-profile">
 
-        <div class="profile-details">
+        <a href="./" class="profile-details">
 
             <div class="profile-details-image">
 
@@ -30,7 +31,7 @@
                 <p class="name">Duyil Ayomid</p>
                 <p class="time"><?php echo date("d.m.Y") ?></p>
             </div>
-        </div>
+        </a>
 
     </div>
 
@@ -45,6 +46,7 @@
 
 
                     <a href="#" class="dropdown-btn" data-id="1">
+                        
                         <span class="link-text">
 
                             <span class="icon"><i class="fa-solid fa-cube"></i></span><span class="text">Overview</span>

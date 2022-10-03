@@ -234,4 +234,38 @@
 
 .main-side-content:not(:first-child) {
   margin-top: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-side-content .action-card {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 669px) {
+  .main-side-content .balance-card .balance-actions button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  .main-side-content .action-card .action-content {
+    width: 95%;
+  }
+  .main-side-content .action-card .transaction-history {
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .main-side-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-side-content .contents {
+    width: 100%;
+  }
+  .main-side-content .balance-card {
+    border: 1px solid red;
+  }
+  .main-side-content:not(:first-child) {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=index.css.map */
