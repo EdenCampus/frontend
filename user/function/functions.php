@@ -4,8 +4,9 @@
 
         $newprice = "0";
 
-        if(isset($price) && !empty($price) && is_int($price)){
-
+        
+        if(isset($price) && !empty($price)){
+            $newprice = number_format($price, 2, ".", ",");
         }
 
 

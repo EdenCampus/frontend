@@ -55,7 +55,7 @@ error_reporting(E_ALL);
 
                             <p class="balance-title">Balance</p>
 
-                            <h1 class="balance"><span class="currency-icon">&#8358;</span> <span class="price"><?php echo format_price("3000") ?></span></h1>
+                            <h1 class="balance"><span class="currency-icon">&#8358;</span> <span class="price"><?php echo format_price(3000) ?></span></h1>
 
                             <div class="balance-actions">
 
