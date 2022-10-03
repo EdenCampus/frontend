@@ -380,13 +380,46 @@ $nav-color: rgb(27,28,33);
             width: 100%;
         }
 
-        .balance-card{
-            border: 1px solid red;
+        .last-update{
+            margin-top: 5px;
+        }
 
+        .balance-card{
+            // border: 1px solid red;
+            text-align: center;
+
+            .balance-title{
+                margin-top: 0px;
+                font-weight: bold;
+                font-size: 1rem;
+                color: $default-color;
+            }
+
+            .balance-actions{
+                justify-content: center;
+
+            }
+
+        }
+
+        .action-card{
+            margin-top: 20px;
+
+            .action-content{
+                width: 100%;
+            }
+
+            .transaction-history{
+                margin-left: 0px;
+            }
+        }
+
+        .transaction-notification{
+            margin-top: 20px;
         }
     }
 
     .main-side-content:not(:first-child){
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
