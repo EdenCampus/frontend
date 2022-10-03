@@ -31,6 +31,15 @@
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.7);
 }
+.main-side-content .balance-card .balance {
+  font-size: 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main-side-content .balance-card .balance .currency-icon {
+  font-size: 1.8rem;
+}
 .main-side-content .balance-card .balance .currency-icon {
   color: rgb(211, 145, 58);
 }
@@ -45,6 +54,7 @@
 }
 .main-side-content .balance-card .balance-actions .add-button {
   background: black;
+  border: 2px solid black;
   color: white;
 }
 .main-side-content .balance-card .balance-actions button:not(:first-child) {
@@ -57,7 +67,6 @@
   display: flex;
   width: 100%;
   padding: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .main-side-content .action-card .action-content .action {
@@ -68,10 +77,10 @@
   justify-content: center;
   border-radius: 7px;
   border: none;
-  background: #f0f0f0;
 }
 .main-side-content .action-card .action-content .action .icon {
   margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 .main-side-content .action-card .action-content .action .history-image {
   padding: 4px;
@@ -87,10 +96,14 @@
 .main-side-content .action-card .action-content .action .history-text {
   padding: 5px;
 }
+.main-side-content .action-card .action-content .withdraw-action .icon {
+  color: green;
+}
 .main-side-content .action-card .action-content .action-link {
   min-width: 60px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background: #e6e6e6;
 }
 .main-side-content .action-card .action-content .action-link:not(:first-child) {
   margin-left: 10px;
@@ -268,13 +281,7 @@
     color: black;
   }
   .main-side-content .balance-card .balance {
-    font-size: 3rem;
-    display: flex;
-    align-items: flex-start;
     justify-content: center;
-  }
-  .main-side-content .balance-card .balance .currency-icon {
-    font-size: 1.8rem;
   }
   .main-side-content .balance-card .balance-actions {
     justify-content: center;

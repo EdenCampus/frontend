@@ -60,7 +60,7 @@ error_reporting(E_ALL);
                             <div class="balance-actions">
 
                                 <button class="add-button">Add Funds</button>
-                                <button class="withdraw-button">Withdraw Funds</button>
+                                <button class="withdraw-button">Withdraw</button>
 
                             </div>
 
@@ -70,37 +70,37 @@ error_reporting(E_ALL);
 
                             <div class="action-content transaction-action">
 
-                                    <button class="action withdraw-action">
+                                    <a class="action bill-action">
 
                                         <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
 
-                                        <span class="text">Withdraw</span>
+                                        <span class="text">Bills</span>
 
-                                    </button>
+                                    </a>
 
-                                    <button class="action withdraw-action">
+                                    <a class="action chores-action">
 
-                                        <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
+                                        <span class="icon"><i class="fa-solid fa-socks"></i></span>
 
-                                        <span class="text">Withdraw</span>
+                                        <span class="text">Chores</span>
 
-                                    </button>
+                                    </a>
 
-                                    <button class="action withdraw-action">
+                                    <a class="action food-action">
 
-                                        <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
+                                        <span class="icon"><i class="fa-solid fa-utensils"></i></span>
 
-                                        <span class="text">Withdraw</span>
+                                        <span class="text">Food</span>
 
-                                    </button>
+                                    </a>
 
-                                    <button class="action withdraw-action">
+                                    <a class="action store-action">
 
-                                        <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
+                                        <span class="icon"><i class="fa-solid fa-store"></i></span>
 
-                                        <span class="text">Withdraw</span>
+                                        <span class="text">Store</span>
 
-                                    </button>
+                                    </a>
 
                             </div>
 
