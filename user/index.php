@@ -323,8 +323,8 @@ error_reporting(E_ALL);
 
                                 <div class="notification-action">
 
-                                    <button class="edit-notification-btn"><i class="fa-solid fa-arrow-left"></i></button>
-                                    <button class="edit-notification-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                                    <button class="notification-navigation-btn left-notif-nav-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                                    <button class="notification-navigation-btn right-notif-nav-btn"><i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
 
 
@@ -352,6 +352,37 @@ error_reporting(E_ALL);
 
                                     <div class="notification-content">
 
+                                        <div class="notification-card special-notification">
+
+                                            <div class="notification-icon">
+                
+                                                <i class="fa-solid fa-exclamation-triangle"></i>
+
+                                            </div>
+
+                                            <div class="notification-card-details">
+        
+                                                    <div class="notification-message">
+                
+                                                        <p class="message">Complete your profile</p>
+        
+                                                        <p class="time special-notif-message">Please add your mobile number</p>
+                
+                                                    </div>
+
+                                                    <div class="notification-chart" style="border-top-color: rgb(211, 145, 58); border-right-color: rgb(211, 145, 58);" data-percent="50">
+
+                                                        <div class="chart-text">50%</div>
+
+                                                    </div>
+        
+                                                    
+        
+                                            </div>
+
+
+
+                                        </div>
 
                                         <div class="notification-card">
         
@@ -543,6 +574,68 @@ error_reporting(E_ALL);
         
         
                                         </div>
+                                        
+                                        <div class="notification-card">
+        
+                                            <div class="notification-icon">
+        
+                                                <i class="fa-solid fa-socks"></i>
+        
+                                            </div>
+    
+                                            <div class="notification-card-details">
+    
+                                                <div class="notification-message">
+            
+                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+    
+                                                    <p class="time">5 min ago</p>
+            
+                                                </div>
+    
+                                                <div class="notification-transaction-details">
+    
+                                                    <p class="status pending">Pending</p>
+    
+                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+    
+                                                </div>
+    
+                                            </div>
+        
+        
+                                        </div>
+    
+                                        <div class="notification-card">
+        
+                                            <div class="notification-icon">
+        
+                                                <i class="fa-solid fa-socks"></i>
+        
+                                            </div>
+    
+                                            <div class="notification-card-details">
+    
+                                                <div class="notification-message">
+            
+                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+    
+                                                    <p class="time">5 min ago</p>
+            
+                                                </div>
+    
+                                                <div class="notification-transaction-details">
+    
+                                                    <p class="status completed">Completed</p>
+    
+                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+    
+                                                </div>
+    
+                                            </div>
+        
+        
+                                        </div>
 
                                     </div>
 
@@ -601,6 +694,68 @@ error_reporting(E_ALL);
                                                 <div class="notification-transaction-details">
     
                                                     <p class="status ongoing">Ongoing</p>
+    
+                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+    
+                                                </div>
+    
+                                            </div>
+        
+        
+                                        </div>
+    
+                                        <div class="notification-card">
+        
+                                            <div class="notification-icon">
+        
+                                                <i class="fa-solid fa-socks"></i>
+        
+                                            </div>
+    
+                                            <div class="notification-card-details">
+    
+                                                <div class="notification-message">
+            
+                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+    
+                                                    <p class="time">5 min ago</p>
+            
+                                                </div>
+    
+                                                <div class="notification-transaction-details">
+    
+                                                    <p class="status completed">Completed</p>
+    
+                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+    
+                                                </div>
+    
+                                            </div>
+        
+        
+                                        </div>
+                                        
+                                        <div class="notification-card">
+        
+                                            <div class="notification-icon">
+        
+                                                <i class="fa-solid fa-socks"></i>
+        
+                                            </div>
+    
+                                            <div class="notification-card-details">
+    
+                                                <div class="notification-message">
+            
+                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+    
+                                                    <p class="time">5 min ago</p>
+            
+                                                </div>
+    
+                                                <div class="notification-transaction-details">
+    
+                                                    <p class="status pending">Pending</p>
     
                                                     <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
     

@@ -8,7 +8,9 @@ window.addEventListener("load", ()=>{
     var navDropDownLink = All(".nav-link .link .link-container .dropdown-btn"),
         navChangePosBtn = Ele(".nav-header .adjust-nav-btn"),
         openMobileMenuBtn = Ele("header .open-menu-btn"),
-        closeMobileMenuBtn = Ele(".mobile-nav-container .close-mobile-nav-btn");
+        closeMobileMenuBtn = Ele(".mobile-nav-container .close-mobile-nav-btn"),
+        notificationNextButton = Ele(".right-notif-nav-btn"),
+        notificationPrevButton = Ele(".left-notif-nav-btn");
 
     navDropDownLink.forEach(element => {
 
@@ -27,7 +29,10 @@ window.addEventListener("load", ()=>{
 
     navChangePosBtn.addEventListener("click", changeNavPos);
     openMobileMenuBtn.addEventListener("click", openMobileMenu)
-    closeMobileMenuBtn.addEventListener("click", closeMobileMenu)
+    closeMobileMenuBtn.addEventListener("click", closeMobileMenu);
+
+    notificationNextButton.addEventListener("click", nextNotificationList);
+    notificationPrevButton.addEventListener("click", PrevNotificationList);
 
 
 })
@@ -192,4 +197,55 @@ function closeMobileMenu(){
             }, 600)
 
         }, 600)
+}
+
+function nextNotificationList(){
+    var notificationContent = All(".notification-list-container .notification-content"),
+        totalNotifContainer = notificationContent.length,
+        parentElement = Ele(".notification-list-container"),
+        scrollLength = notificationContent[0].getBoundingClientRect().width,
+        totalNotifLength = (scrollLength * totalNotifContainer),
+        presentScrolledLength = ((-1 * notificationContent[0].offsetLeft) + parentElement.getBoundingClientRect().width);
+
+    if(presentScrolledLength >=  totalNotifLength - 10){
+
+        notificationContent[0].style.marginLeft = (-1 * (totalNotifLength - parentElement.getBoundingClientRect().width)) + "px";
+        
+    }else{
+
+        notificationContent[0].style.marginLeft = (notificationContent[0].offsetLeft + (-1 * scrollLength)) + "px";
+
+    }
+
+    // console.log(presentScrolledLength + "===" + totalNotifLength);
+
+    
+}
+
+function PrevNotificationList(){
+    var notificationContent = All(".notification-list-container .notification-content"),
+        scrollLength = notificationContent[0].getBoundingClientRect().width,
+        presentScrolledLength = notificationContent[0].offsetLeft,
+        neededScrollLength = (notificationContent[0].offsetLeft + scrollLength);
+
+    if(presentScrolledLength >=  0){
+
+        notificationContent[0].style.marginLeft = "0px";
+        
+    }else{
+
+        if(neededScrollLength > 0 || ((-1 * neededScrollLength )< (scrollLength - 10))){
+
+            notificationContent[0].style.marginLeft = "0px";
+        }else{
+
+            notificationContent[0].style.marginLeft = neededScrollLength + "px";
+        }
+
+
+    }
+
+    // console.log((-1 * neededScrollLength) + "===" + (scrollLength));
+
+    
 }
