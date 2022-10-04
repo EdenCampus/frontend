@@ -10,7 +10,10 @@ window.addEventListener("load", ()=>{
         openMobileMenuBtn = Ele("header .open-menu-btn"),
         closeMobileMenuBtn = Ele(".mobile-nav-container .close-mobile-nav-btn"),
         notificationNextButton = Ele(".right-notif-nav-btn"),
-        notificationPrevButton = Ele(".left-notif-nav-btn");
+        notificationPrevButton = Ele(".left-notif-nav-btn"),
+        transactionNextBtn = Ele(".right-transaction-btn"),
+        transactionPrevBtn = Ele(".left-transaction-btn"),
+        totalTransactionCountElement = Ele(".transaction-list-content span.total") ;
 
     navDropDownLink.forEach(element => {
 
@@ -33,6 +36,9 @@ window.addEventListener("load", ()=>{
 
     notificationNextButton.addEventListener("click", nextNotificationList);
     notificationPrevButton.addEventListener("click", PrevNotificationList);
+    transactionNextBtn.addEventListener("click", nextTransactionList);
+    transactionPrevBtn.addEventListener("click", PrevTransactionList);
+    totalTransactionCountElement.innerText = All(".transaction-list-content .transaction-list-container .transactions").length;
 
 
 })
@@ -224,6 +230,60 @@ function nextNotificationList(){
 
 function PrevNotificationList(){
     var notificationContent = All(".notification-list-container .notification-content"),
+        scrollLength = notificationContent[0].getBoundingClientRect().width,
+        presentScrolledLength = notificationContent[0].offsetLeft,
+        neededScrollLength = (notificationContent[0].offsetLeft + scrollLength);
+
+    if(presentScrolledLength >=  0){
+
+        notificationContent[0].style.marginLeft = "0px";
+        
+    }else{
+
+        if(neededScrollLength > 0 || ((-1 * neededScrollLength )< (scrollLength - 10))){
+
+            notificationContent[0].style.marginLeft = "0px";
+        }else{
+
+            notificationContent[0].style.marginLeft = neededScrollLength + "px";
+        }
+
+
+    }
+
+    // console.log((-1 * neededScrollLength) + "===" + (scrollLength));
+
+    
+}
+
+function nextTransactionList(){
+    var notificationContent = All(".transaction-list-content .transaction-list-container .transactions"),
+        totalNotifContainer = notificationContent.length,
+        presentTransactionCountElement = Ele(".transaction-list-content span.present"),
+        parentElement = Ele(".transaction-list-content .transaction-list-container"),
+        scrollLength = notificationContent[0].getBoundingClientRect().width,
+        totalNotifLength = (scrollLength * totalNotifContainer),
+        presentScrolledLength = ((-1 * notificationContent[0].offsetLeft) + parentElement.getBoundingClientRect().width);
+
+    if(presentScrolledLength >=  totalNotifLength - 10){
+
+        notificationContent[0].style.marginLeft = (-1 * (totalNotifLength - parentElement.getBoundingClientRect().width)) + "px";
+        
+    }else{
+
+        notificationContent[0].style.marginLeft = (notificationContent[0].offsetLeft + (-1 * scrollLength)) + "px";
+
+    }
+
+    // presentTransactionCountElement.innerText = (((-1 * (notificationContent[0].offsetLeft - 50) )/ scrollLength) + 2)
+
+    // console.log(presentScrolledLength + "===" + totalNotifLength);
+
+    
+}
+
+function PrevTransactionList(){
+    var notificationContent = All(".transaction-list-content .transaction-list-container .transactions"),
         scrollLength = notificationContent[0].getBoundingClientRect().width,
         presentScrolledLength = notificationContent[0].offsetLeft,
         neededScrollLength = (notificationContent[0].offsetLeft + scrollLength);

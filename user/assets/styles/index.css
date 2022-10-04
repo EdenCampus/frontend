@@ -192,48 +192,70 @@
   color: rgba(0, 0, 0, 0.7);
   margin-top: 10px;
   padding: 0px 15px;
+  display: none;
 }
-.main-side-content .transaction-list .transactions .transaction-card {
+.main-side-content .transaction-list .transaction-list-content {
+  width: 100%;
+}
+.main-side-content .transaction-list .transaction-list-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.main-side-content .transaction-list .transaction-list-container .transactions {
+  min-width: 100%;
+  width: 100%;
+  transition: 1s ease all;
+}
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card {
   display: flex;
   padding: 15px;
   align-items: center;
   justify-content: space-between;
 }
-.main-side-content .transaction-list .transactions .transaction-card .transaction-card-details {
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card .transaction-card-details {
   display: flex;
   align-items: center;
 }
-.main-side-content .transaction-list .transactions .transaction-card .transaction-card-details .transaction-card-image {
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card .transaction-card-details .transaction-card-image {
   width: 30px;
   height: 30px;
   overflow: hidden;
   border-radius: 3px;
   margin-right: 20px;
 }
-.main-side-content .transaction-list .transactions .transaction-card .transaction-card-details .transaction-card-text h4 {
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card .transaction-card-details .transaction-card-text h4 {
   font-weight: bold;
   color: black;
 }
-.main-side-content .transaction-list .transactions .transaction-card .transaction-card-details .transaction-card-text p {
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card .transaction-card-details .transaction-card-text p {
   color: rgba(0, 0, 0, 0.7);
 }
-.main-side-content .transaction-list .transactions .transaction-card .price-tag {
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card .price-tag {
   display: block;
   padding: 3px 5px;
   background: #e6e6e6;
   border-radius: 2px;
 }
-.main-side-content .transaction-list .transactions .transaction-card .withdrawn {
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card .withdrawn {
   background: rgba(255, 51, 51, 0.2);
   color: rgb(204, 0, 0);
 }
-.main-side-content .transaction-list .transactions .transaction-card .received {
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card .received {
   background: rgba(51, 255, 51, 0.2);
   color: rgb(0, 190, 0);
 }
-.main-side-content .transaction-list .transactions .transaction-card:hover {
+.main-side-content .transaction-list .transaction-list-container .transactions .transaction-card:hover {
   background: rgba(255, 255, 255, 0.8);
   transition: 0.5s ease all;
+}
+.main-side-content .transaction-list .transaction-link {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
 }
 .main-side-content .transaction-notification .notification-header {
   display: flex;
@@ -262,6 +284,7 @@
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.6);
   margin-top: 10px;
+  display: none;
 }
 .main-side-content .transaction-notification .notification-list .notification-list-container {
   position: relative;

@@ -237,8 +237,8 @@ error_reporting(E_ALL);
 
                                 <div class="header-action-btn">
 
-                                    <button class="navigation-btn left-btn"><i class="fa-solid fa-arrow-left"></i></button>
-                                    <button class="navigation-btn right-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                                    <button class="navigation-btn left-transaction-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                                    <button class="navigation-btn right-transaction-btn"><i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
 
                             </div>
@@ -257,56 +257,513 @@ error_reporting(E_ALL);
                             <div class="transaction-list-content">
 
                                 <p class="count"><span class="present">1</span>/<span class="total">3</span></p>
-    
-                                <div class="transactions">
-                                        
-                                    <a href="./" class="transaction-card">
-    
-                                        <div class="transaction-card-details">
-    
-                                            <div class="transaction-card-image">
-                                                <img src="./assets/images/mtn_logo.jpg" alt="">
-                                            </div>
+
+                                <div class="transaction-list-container">
+
+                                    <div class="transactions">
                                             
-                                            <div class="transaction-card-text">
-    
-                                                <h4>MTN Data</h4>
-                                                <p>Now</p>
-    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/mtn_logo.jpg" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>MTN Data</h4>
+                                                    <p>Now</p>
+        
+                                                </div>
+        
+        
                                             </div>
-    
-    
-                                        </div>
-    
-                                        <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
-    
-    
-                                    </a>
-    
-                                    <a href="./" class="transaction-card">
-    
-                                        <div class="transaction-card-details">
-    
-                                            <div class="transaction-card-image">
-                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+        
+                                            <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+        
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
                                             </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+        
+        
+                                    </div>
+
+                                    <div class="transactions">
                                             
-                                            <div class="transaction-card-text">
-    
-                                                <h4>Credit (Firstbank)</h4>
-                                                <p>5 mins ago</p>
-    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/mtn_logo.jpg" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>MTN Data</h4>
+                                                    <p>Now</p>
+        
+                                                </div>
+        
+        
                                             </div>
+        
+                                            <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+        
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
     
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
     
-                                        </div>
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
     
-                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
     
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
     
-                                    </a>
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+        
+        
+                                    </div>
+
+                                    <div class="transactions">
+                                            
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/mtn_logo.jpg" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>MTN Data</h4>
+                                                    <p>Now</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+        
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
     
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
     
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+    
+                                        <a href="./" class="transaction-card">
+        
+                                            <div class="transaction-card-details">
+        
+                                                <div class="transaction-card-image">
+                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                                </div>
+                                                
+                                                <div class="transaction-card-text">
+        
+                                                    <h4>Credit (Firstbank)</h4>
+                                                    <p>5 mins ago</p>
+        
+                                                </div>
+        
+        
+                                            </div>
+        
+                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+        
+        
+                                        </a>
+        
+        
+                                    </div>
+
+                                </div>
+    
+                                <div class="transaction-link">
+
+                                    <a href="./">See all</a>
+
                                 </div>
 
                             </div>
@@ -467,6 +924,39 @@ error_reporting(E_ALL);
                                                 <div class="notification-transaction-details">
     
                                                     <p class="status completed">Completed</p>
+    
+                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+    
+                                                </div>
+    
+                                            </div>
+        
+        
+                                        </div>
+
+
+    
+                                        <div class="notification-card">
+        
+                                            <div class="notification-icon">
+        
+                                                <i class="fa-solid fa-socks"></i>
+        
+                                            </div>
+    
+                                            <div class="notification-card-details">
+    
+                                                <div class="notification-message">
+            
+                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+    
+                                                    <p class="time">5 min ago</p>
+            
+                                                </div>
+    
+                                                <div class="notification-transaction-details">
+    
+                                                    <p class="status ongoing">Ongoing</p>
     
                                                     <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
     

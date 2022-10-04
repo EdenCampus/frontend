@@ -261,66 +261,92 @@ $nav-color: rgb(27,28,33);
             color: rgba(0, 0, 0, .7);
             margin-top: 10px;
             padding: 0px 15px;
+            display: none;
         }
 
-        .transactions{
+        .transaction-list-content{
+            width: 100%;
+        }
 
-            .transaction-card{
-                display: flex;
-                padding: 15px;
-                align-items: center;
-                justify-content: space-between;
+        .transaction-list-container{
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            width: 100%;
 
-                .transaction-card-details{
+            .transactions{
+                min-width: 100%;
+                width: 100%;
+                transition: 1s ease all;
+                // border: 1px solid red;
+    
+                .transaction-card{
                     display: flex;
+                    padding: 15px;
                     align-items: center;
-
-                    .transaction-card-image{
-                        width: 30px;
-                        height: 30px;
-                        overflow: hidden;
-                        border-radius: 3px;
-                        margin-right: 20px;
+                    justify-content: space-between;
+                    // border: 1px solid red;
+    
+                    .transaction-card-details{
+                        display: flex;
+                        align-items: center;
+    
+                        .transaction-card-image{
+                            width: 30px;
+                            height: 30px;
+                            overflow: hidden;
+                            border-radius: 3px;
+                            margin-right: 20px;
+                        }
+        
+                        .transaction-card-text{
+        
+                            h4{
+                                font-weight: bold;
+                                color: $default-color;
+                            }
+        
+                            p{
+                                color: rgba(0, 0, 0, .7);
+                            }
+                        }
                     }
     
-                    .transaction-card-text{
-    
-                        h4{
-                            font-weight: bold;
-                            color: $default-color;
-                        }
-    
-                        p{
-                            color: rgba(0, 0, 0, .7);
-                        }
+                    .price-tag{
+                        display: block;
+                        padding: 3px 5px;
+                        background: #e6e6e6;
+                        border-radius: 2px;
                     }
+    
+                    .withdrawn{
+                        background: rgba(255, 51, 51, .2);
+                        color: rgb(204, 0, 0);
+                    }
+    
+                    .received{
+                        background: rgba(51, 255, 51, .2);
+                        color: rgb(0, 190, 0);
+                    }
+    
                 }
-
-                .price-tag{
-                    display: block;
-                    padding: 3px 5px;
-                    background: #e6e6e6;
-                    border-radius: 2px;
+    
+                .transaction-card:hover{
+                    background: rgba(255, 255, 255, .8);
+                    transition: 0.5s ease all;
+    
                 }
-
-                .withdrawn{
-                    background: rgba(255, 51, 51, .2);
-                    color: rgb(204, 0, 0);
-                }
-
-                .received{
-                    background: rgba(51, 255, 51, .2);
-                    color: rgb(0, 190, 0);
-                }
-
-            }
-
-            .transaction-card:hover{
-                background: rgba(255, 255, 255, .8);
-                transition: 0.5s ease all;
-
             }
         }
+
+        .transaction-link{
+            display: flex;
+            padding: 0px 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+        }
+
     }
 
     .transaction-notification{
@@ -359,6 +385,7 @@ $nav-color: rgb(27,28,33);
                 font-size: 0.9rem;
                 color: rgba(0, 0, 0, .6);
                 margin-top: 10px;
+                display: none;
             }
 
             
@@ -607,6 +634,11 @@ $nav-color: rgb(27,28,33);
 
         .transaction-notification{
             margin-top: 40px;
+
+            .notification-list{
+
+                // .special-noti
+            }
         }
     }
 
