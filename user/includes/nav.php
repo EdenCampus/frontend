@@ -28,8 +28,8 @@
             </div>
 
             <div class="profile-details-text">
-                <p class="name">Duyil Ayomid</p>
-                <p class="time"><?php echo date("d.m.Y") ?></p>
+                <p class="name"><?php echo FIRST_NAME. " ". LAST_NAME; ?></p>
+                <p class="time">&#8358;<?php echo format_price(BALANCE) ?></p>
             </div>
         </a>
 

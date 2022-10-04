@@ -19,6 +19,27 @@
   background: darkgreen;
   margin-right: 4px;
 }
+.main-side-content .empty {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+}
+.main-side-content .empty .empty-image {
+  width: 100%;
+  max-width: 200px;
+}
+.main-side-content .empty .empty-text {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8rem;
+  bottom: 0px;
+  position: absolute;
+  text-align: center;
+}
 .main-side-content .contents {
   width: 45%;
 }
@@ -216,6 +237,7 @@
 }
 .main-side-content .transaction-notification .notification-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .main-side-content .transaction-notification .notification-header h4 {
@@ -225,21 +247,44 @@
 .main-side-content .transaction-notification .notification-header button {
   background: transparent;
   border: none;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   padding: 0px;
   color: rgba(0, 0, 0, 0.7);
   margin-left: 5px;
+  background: #e6e6e6;
+  padding: 3px 8px;
+  border-radius: 3px;
 }
-.main-side-content .transaction-notification .notification-list .notification-card {
+.main-side-content .transaction-notification .notification-header button:not(:first-child) {
+  margin-left: 10px;
+}
+.main-side-content .transaction-notification .notification-list .notification-stats {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content {
+  transition: 1s ease all;
+  min-width: 100%;
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card {
   padding: 15px 10px;
   display: flex;
   align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 20px;
 }
-.main-side-content .transaction-notification .notification-list .notification-card a {
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card a {
   font-weight: bold;
   position: relative;
 }
-.main-side-content .transaction-notification .notification-list .notification-card a::after {
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card a::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -248,7 +293,7 @@
   left: 0px;
   bottom: -2px;
 }
-.main-side-content .transaction-notification .notification-list .notification-card .notification-icon {
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-icon {
   background: #e6e6e6;
   width: 30px;
   height: 30px;
@@ -259,6 +304,33 @@
   justify-content: center;
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.7);
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-card-details {
+  width: calc(100% - 45px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-card-details .notification-message .time {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 8px;
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-card-details .notification-transaction-details .status {
+  font-size: 0.7rem;
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-card-details .notification-transaction-details .pending {
+  color: rgb(204, 0, 0);
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-card-details .notification-transaction-details .ongoing {
+  color: #b35900;
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-card-details .notification-transaction-details .completed {
+  color: rgb(0, 190, 0);
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-card-details .notification-transaction-details .amount {
+  font-weight: bold;
 }
 
 .main-side-content:not(:last-child) {

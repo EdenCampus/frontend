@@ -6,7 +6,9 @@ var props = {
 window.addEventListener("load", ()=>{
 
     var navDropDownLink = All(".nav-link .link .link-container .dropdown-btn"),
-        navChangePosBtn = Ele(".nav-header .adjust-nav-btn");
+        navChangePosBtn = Ele(".nav-header .adjust-nav-btn"),
+        openMobileMenuBtn = Ele("header .open-menu-btn"),
+        closeMobileMenuBtn = Ele(".mobile-nav-container .close-mobile-nav-btn");
 
     navDropDownLink.forEach(element => {
 
@@ -24,9 +26,13 @@ window.addEventListener("load", ()=>{
     });
 
     navChangePosBtn.addEventListener("click", changeNavPos);
+    openMobileMenuBtn.addEventListener("click", openMobileMenu)
+    closeMobileMenuBtn.addEventListener("click", closeMobileMenu)
 
 
 })
+
+
 
 function openNavDropDown(id){
     var navDropDown = All(".nav-link .link .dropdown-container"),
@@ -152,4 +158,38 @@ function unShrinkedNavBar(){
             navBar.classList.remove("shrinked");
         }
     }, 150)
+}
+
+function openMobileMenu(){
+
+    var menuModal = Ele(".mobile-nav-container"),
+        mobileMenu = Ele(".mobile-nav-container .mobile-nav")
+
+    menuModal.style.display = "block";
+
+    setTimeout(()=>{
+        menuModal.style.opacity = "1";
+        mobileMenu.style.left ="0px";
+
+
+    }, 50)
+}
+
+function closeMobileMenu(){
+
+    var menuModal = Ele(".mobile-nav-container"),
+        mobileMenu = Ele(".mobile-nav-container .mobile-nav");
+
+        mobileMenu.style.left ="-350px";
+        
+        setTimeout(()=>{
+
+            menuModal.style.opacity = "0";
+
+            setTimeout(()=>{
+
+                menuModal.style.display = "none";
+            }, 600)
+
+        }, 600)
 }
