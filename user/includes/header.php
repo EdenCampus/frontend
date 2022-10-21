@@ -35,6 +35,10 @@
 
 </header>
 
+<?php require_once("notification.php"); ?>
+
+
+
 <div class="mobile-nav-container">
 
     <div class="mobile-nav">

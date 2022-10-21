@@ -283,6 +283,7 @@ body .main-body .main-side {
   height: 100%;
   transition: 0.5s ease all;
   position: relative;
+  overflow: hidden;
 }
 body .main-body .main-side header {
   height: 60px;
@@ -496,6 +497,127 @@ body .main-body .main-side .mobile-nav-container .mobile-nav .nav-link ul .link:
 }
 body .main-body .main-side .mobile-nav-container .mobile-nav .nav-link ul .background-link .link-container a {
   background: rgb(211, 145, 58);
+}
+body .main-body .main-side .main-notification {
+  position: absolute;
+  height: 98%;
+  width: 100%;
+  max-width: 350px;
+  top: 1%;
+  right: -350px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 99;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+body .main-body .main-side .main-notification .notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 7%;
+  height: 55px;
+  position: relative;
+}
+body .main-body .main-side .main-notification .notification-header h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+body .main-body .main-side .main-notification .notification-header button {
+  font-size: 1rem;
+  padding: 0px;
+  background: transparent;
+  border: none;
+}
+body .main-body .main-side .main-notification .notification-header button .icon {
+  margin-right: 5px;
+}
+body .main-body .main-side .main-notification .notification-header .close-notification-button {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  padding: 7px 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  outline: none;
+}
+body .main-body .main-side .main-notification .notification-content {
+  height: calc(100% - 55px);
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  scrollbar-color: rgba(0, 0, 0, 0.5);
+  scrollbar-width: thin;
+  scrollbar-track-color: rgba(0, 0, 0, 0.1);
+}
+body .main-body .main-side .main-notification .notification-content .notification-card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  padding: 15px;
+  width: 85%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .main-body .main-side .main-notification .notification-content .notification-card .image {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+body .main-body .main-side .main-notification .notification-content .notification-card .notif-message .message {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 0.9rem;
+}
+body .main-body .main-side .main-notification .notification-content .notification-card .notif-message .time {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+  margin-top: 5px;
+}
+body .main-body .main-side .main-notification .notification-content::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+body .main-body .main-side .main-notification .notification-content:hover::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+body .main-body .main-side .main-notification .notification-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+}
+body .main-body .main-side .main-notification .notification-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+body .main-body .main-side .main-notification hr {
+  width: 86%;
+  border-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  z-index: 9;
 }
 body .main-body .main-side .main-side-container {
   height: calc(100% - 60px);

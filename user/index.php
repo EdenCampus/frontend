@@ -42,7 +42,7 @@ error_reporting(E_ALL);
 
                 <div class="main-side-container">
 
-                <!-- <lottie-player src="./assets/images/lf30_editor_pbbz61tg.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
+                    <!-- <lottie-player src="./assets/images/lf30_editor_pbbz61tg.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
 
                     <!-- main page content goes here -->
 
@@ -853,7 +853,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -884,7 +884,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -915,7 +915,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -948,7 +948,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -984,7 +984,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1015,7 +1015,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1046,7 +1046,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1077,7 +1077,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1108,7 +1108,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1144,7 +1144,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1175,7 +1175,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1206,7 +1206,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1237,7 +1237,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
@@ -1268,7 +1268,7 @@ error_reporting(E_ALL);
     
                                                 <div class="notification-message">
             
-                                                    <p class="message"><a href="./">Hooli</a> sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
     
                                                     <p class="time">5 min ago</p>
             
