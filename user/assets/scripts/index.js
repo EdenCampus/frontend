@@ -1,6 +1,7 @@
 "use strict";
 var props = {
-    shrinkedNavBarActive: false
+    shrinkedNavBarActive: false,
+    notificationActive: false
 }
 
 window.addEventListener("load", ()=>{
@@ -13,7 +14,15 @@ window.addEventListener("load", ()=>{
         notificationPrevButton = Ele(".left-notif-nav-btn"),
         transactionNextBtn = Ele(".right-transaction-btn"),
         transactionPrevBtn = Ele(".left-transaction-btn"),
-        totalTransactionCountElement = Ele(".transaction-list-content span.total") ;
+        totalTransactionCountElement = Ele(".transaction-list-content span.total"),
+        notificationBtn = All("header .link-btn li button"),
+        closeNotifBtn = Ele(".main-notification .notification-header .close-notification-button");
+
+    closeNotifBtn.addEventListener("click", ()=>{
+        actions("close-notif");
+    })
+
+        console.log(closeNotifBtn)
 
     navDropDownLink.forEach(element => {
 
@@ -30,6 +39,18 @@ window.addEventListener("load", ()=>{
         
     });
 
+    notificationBtn.forEach(element => {
+        
+        if(element.getAttribute("data-action")){
+            element.addEventListener("click",  ()=>{
+                actions(element.getAttribute("data-action"));
+            
+            })
+            // console.log(element)
+
+        }
+    })
+
     navChangePosBtn.addEventListener("click", changeNavPos);
     openMobileMenuBtn.addEventListener("click", openMobileMenu)
     closeMobileMenuBtn.addEventListener("click", closeMobileMenu);
@@ -43,7 +64,22 @@ window.addEventListener("load", ()=>{
 
 })
 
+function actions(act){
+    var notificationContainer = Ele(".main-notification");
+   
 
+    switch (act) {
+
+        case "notification":
+            notificationContainer.style.right = "10px";
+            break;
+        case "close-notif":
+            notificationContainer.style.right = "-350px";
+            break;
+        default:
+            return;
+    }
+}
 
 function openNavDropDown(id){
     var navDropDown = All(".nav-link .link .dropdown-container"),
