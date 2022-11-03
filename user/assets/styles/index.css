@@ -370,8 +370,8 @@
 }
 .main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .notification-card .notification-card-details .notification-chart {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: #e6e6e6;
   display: flex;
   justify-content: center;
@@ -400,6 +400,9 @@
   height: 50px;
   border-radius: 50%;
   color: #ff3333;
+}
+.main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .special-notification .notification-icon i {
+  margin-top: -5px;
 }
 .main-side-content .transaction-notification .notification-list .notification-list-container .notification-content .special-notification .notification-card-details .notification-message .message {
   font-weight: bold;
