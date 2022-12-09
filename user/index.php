@@ -1,5 +1,5 @@
-<?php 
-require_once("./function/functions.php"); 
+<?php
+require_once("./function/functions.php");
 require_once("./includes/user_details.php");
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -12,19 +12,21 @@ error_reporting(E_ALL);
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Utopia Dashboard</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.css">
-        <link rel="stylesheet" href="./assets/styles/general.css">
-        <link rel="stylesheet" href="./assets/styles/index.css">
-        <script src="../assets/plugins/lottie_player/lottie-player.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Utopia Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/styles/general.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <script src="../assets/plugins/lottie_player/lottie-player.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
@@ -61,94 +63,93 @@ error_reporting(E_ALL);
 
         </div>
 
-        <div class="main-body">
+    <div class="main-body">
 
 
 
-            <div class="nav-side">
+        <div class="nav-side">
 
-                <?php require_once("./includes/nav.php") ?>
+            <?php require_once("./includes/nav.php") ?>
 
-            </div>
-            <div class="main-side">
+        </div>
+        <div class="main-side">
 
-                <?php require_once("./includes/header.php") ?>
+            <?php require_once("./includes/header.php") ?>
 
-                <div class="main-side-container">
+            <div class="main-side-container">
 
-                    <!-- <lottie-player src="./assets/images/lf30_editor_pbbz61tg.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
+                <!-- <lottie-player src="./assets/images/lf30_editor_pbbz61tg.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
 
-                    <!-- main page content goes here -->
+                <!-- main page content goes here -->
 
-                    <div class="main-side-content d-mobile-none">
+                <div class="main-side-content d-mobile-none">
 
-                        <h1 class="content-header">Overview</h1>
+                    <h1 class="content-header">Overview</h1>
 
-                        <p class="last-update"><span class="update-dot"></span><span class="update-text"><?php echo date("d F Y") ?></span> </p>
+                    <p class="last-update"><span class="update-dot"></span><span class="update-text"><?php echo date("d F Y") ?></span> </p>
 
-                    </div>
+                </div>
 
-                    <div class="main-side-content">
+                <div class="main-side-content">
 
-                        <div class="contents balance-card">
+                    <div class="contents balance-card">
 
-                            <p class="balance-title">Balance</p>
+                        <p class="balance-title">Balance</p>
 
-                            <h1 class="balance"><span class="currency-icon">&#8358;</span> <span class="price"><?php echo format_price(BALANCE) ?></span></h1>
+                        <h1 class="balance"><span class="currency-icon">&#8358;</span> <span class="price"><?php echo format_price(BALANCE) ?></span></h1>
 
-                            <div class="balance-actions">
+                        <div class="balance-actions">
 
-                                <button class="add-button">Add Funds</button>
-                                <button class="withdraw-button">Withdraw</button>
-
-                            </div>
+                            <button class="add-button">Add Funds</button>
+                            <button class="withdraw-button">Withdraw</button>
 
                         </div>
 
-                        <div class="contents action-card">
+                    </div>
 
-                            <div class="action-content transaction-action">
+                    <div class="contents action-card">
 
-                                    <a class="action bills-action">
+                        <div class="action-content transaction-action">
 
-                                        <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
+                            <a class="action bills-action">
 
-                                        <span class="text">Bills</span>
+                                <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
 
-                                    </a>
+                                <span class="text">Bills</span>
 
-                                    <a class="action chores-action">
+                            </a>
 
-                                        <span class="icon"><i class="fa-solid fa-socks"></i></span>
+                            <a class="action chores-action">
 
-                                        <span class="text">Chores</span>
+                                <span class="icon"><i class="fa-solid fa-socks"></i></span>
 
-                                    </a>
+                                <span class="text">Chores</span>
 
-                                    <a class="action food-action">
+                            </a>
 
-                                        <span class="icon"><i class="fa-solid fa-utensils"></i></span>
+                            <a class="action food-action">
 
-                                        <span class="text">Food</span>
+                                <span class="icon"><i class="fa-solid fa-utensils"></i></span>
 
-                                    </a>
+                                <span class="text">Food</span>
 
-                                    <a class="action store-action">
+                            </a>
 
-                                        <span class="icon"><i class="fa-solid fa-store"></i></span>
+                            <a class="action store-action">
 
-                                        <span class="text">Store</span>
+                                <span class="icon"><i class="fa-solid fa-store"></i></span>
 
-                                    </a>
+                                <span class="text">Store</span>
 
-                            </div>
+                            </a>
+
+                        </div>
 
                             <div class="action-content transaction-history">
-                                <!-- the data id is the id of each transactions -->
 
                                 <a data-id="1" class="action action-link transaction-link-btn">
 
-                                    <div class="history-image">
+                                <div class="history-image">
 
                                     <div class="image">
 
@@ -156,15 +157,15 @@ error_reporting(E_ALL);
                                     </div>
 
 
-                                    </div>
+                                </div>
 
-                                    <p class="history-text">@olawale</p>
+                                <p class="history-text">@olawale</p>
 
-                                </a>
+                            </a>
 
                                 <a data-id="1" class="action action-link transaction-link-btn">
 
-                                    <div class="history-image">
+                                <div class="history-image">
 
                                     <div class="image">
 
@@ -172,31 +173,15 @@ error_reporting(E_ALL);
                                     </div>
 
 
-                                    </div>
+                                </div>
 
-                                    <p class="history-text">@olawale</p>
+                                <p class="history-text">@olawale</p>
 
-                                </a>
+                            </a>
 
-                                <a data-id="1" class="action action-link transaction-link-btn">
+                                <a href="./" class="action action-link">
 
-                                    <div class="history-image">
-
-                                    <div class="image">
-
-                                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="">
-                                    </div>
-
-
-                                    </div>
-
-                                    <p class="history-text">@olawale</p>
-
-                                </a>
-
-                                <a data-id="1" class="action action-link transaction-link-btn">
-
-                                    <div class="history-image">
+                                <div class="history-image">
 
                                     <div class="image">
 
@@ -204,15 +189,15 @@ error_reporting(E_ALL);
                                     </div>
 
 
-                                    </div>
+                                </div>
 
-                                    <p class="history-text">@olawale</p>
+                                <p class="history-text">@olawale</p>
 
-                                </a>
+                            </a>
 
                                 <a data-id="1" class="action action-link transaction-link-btn">
 
-                                    <div class="history-image">
+                                <div class="history-image">
 
                                     <div class="image">
 
@@ -220,29 +205,15 @@ error_reporting(E_ALL);
                                     </div>
 
 
-                                    </div>
+                                </div>
 
-                                    <p class="history-text">@olawale</p>
+                                <p class="history-text">@olawale</p>
 
-                                </a>
-                                <a data-id="1" class="action action-link transaction-link-btn">
+                            </a>
 
-                                    <div class="history-image">
+                                <a href="./" class="action action-link">
 
-                                    <div class="image">
-
-                                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="">
-                                    </div>
-
-
-                                    </div>
-
-                                    <p class="history-text">@olawale</p>
-
-                                </a>
-                                <a data-id="1" class="action action-link transaction-link-btn">
-
-                                    <div class="history-image">
+                                <div class="history-image">
 
                                     <div class="image">
 
@@ -250,37 +221,67 @@ error_reporting(E_ALL);
                                     </div>
 
 
-                                    </div>
+                                </div>
 
-                                    <p class="history-text">@olawale</p>
+                                <p class="history-text">@olawale</p>
 
                                 </a>
+                                <a href="./" class="action action-link">
 
-                            </div>
+                                <div class="history-image">
+
+                                    <div class="image">
+
+                                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="">
+                                    </div>
+
+
+                                </div>
+
+                                <p class="history-text">@olawale</p>
+
+                                </a>
+                                <a data-id="1" class="action action-link transaction-link-btn">
+
+                                <div class="history-image">
+
+                                    <div class="image">
+
+                                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="">
+                                    </div>
+
+
+                                </div>
+
+                                <p class="history-text">@olawale</p>
+
+                            </a>
 
                         </div>
 
                     </div>
 
-                    <div class="main-side-content">
+                </div>
 
-                        <div class="contents transaction-list">
+                <div class="main-side-content">
 
-                            <div class="transaction-list-header">
+                    <div class="contents transaction-list">
 
-                                <h3>Recent transactions</h3>
+                        <div class="transaction-list-header">
 
-                                <div class="header-action-btn">
+                            <h3>Recent transactions</h3>
 
-                                    <button class="navigation-btn left-transaction-btn"><i class="fa-solid fa-arrow-left"></i></button>
-                                    <button class="navigation-btn right-transaction-btn"><i class="fa-solid fa-arrow-right"></i></button>
-                                </div>
+                            <div class="header-action-btn">
 
+                                <button class="navigation-btn left-transaction-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="navigation-btn right-transaction-btn"><i class="fa-solid fa-arrow-right"></i></button>
                             </div>
 
-                            <!-- uncomment the below code to show empty animation -->
+                        </div>
 
-                             <!-- <div class="empty">
+                        <!-- uncomment the below code to show empty animation -->
+
+                        <!-- <div class="empty">
 
                                 <lottie-player class="empty-image" src="./assets/images/search_not_found.json" background="transparent" speed="1" loop autoplay></lottie-player>
 
@@ -289,544 +290,544 @@ error_reporting(E_ALL);
                             </div> -->
 
 
-                            <div class="transaction-list-content">
+                        <div class="transaction-list-content">
 
-                                <p class="count"><span class="present">1</span>/<span class="total">3</span></p>
+                            <p class="count"><span class="present">1</span>/<span class="total">3</span></p>
 
-                                <div class="transaction-list-container">
+                            <div class="transaction-list-container">
 
-                                    <div class="transactions">
-                                            
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/mtn_logo.jpg" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>MTN Data</h4>
-                                                    <p>Now</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-        
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-        
-        
-                                    </div>
+                                <div class="transactions">
 
-                                    <div class="transactions">
-                                            
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/mtn_logo.jpg" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>MTN Data</h4>
-                                                    <p>Now</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-        
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-        
-        
-                                    </div>
+                                    <a href="./" class="transaction-card">
 
-                                    <div class="transactions">
-                                            
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/mtn_logo.jpg" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>MTN Data</h4>
-                                                    <p>Now</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-        
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-    
-                                        <a href="./" class="transaction-card">
-        
-                                            <div class="transaction-card-details">
-        
-                                                <div class="transaction-card-image">
-                                                    <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
-                                                </div>
-                                                
-                                                <div class="transaction-card-text">
-        
-                                                    <h4>Credit (Firstbank)</h4>
-                                                    <p>5 mins ago</p>
-        
-                                                </div>
-        
-        
-                                            </div>
-        
-                                            <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
-        
-        
-                                        </a>
-        
-        
-                                    </div>
+                                        <div class="transaction-card-details">
 
-                                </div>
-    
-                                <div class="transaction-link">
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/mtn_logo.jpg" alt="">
+                                            </div>
 
-                                    <a href="./">See all</a>
+                                            <div class="transaction-card-text">
+
+                                                <h4>MTN Data</h4>
+                                                <p>Now</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
 
                                 </div>
 
+                                <div class="transactions">
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/mtn_logo.jpg" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>MTN Data</h4>
+                                                <p>Now</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+
+                                </div>
+
+                                <div class="transactions">
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/mtn_logo.jpg" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>MTN Data</h4>
+                                                <p>Now</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag withdrawn">-&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+                                    <a href="./" class="transaction-card">
+
+                                        <div class="transaction-card-details">
+
+                                            <div class="transaction-card-image">
+                                                <img src="./assets/images/First_Bank_of_Nigeria_logo.png" alt="">
+                                            </div>
+
+                                            <div class="transaction-card-text">
+
+                                                <h4>Credit (Firstbank)</h4>
+                                                <p>5 mins ago</p>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <span class="price-tag received">+&#8358;<?php echo format_price("250") ?></span>
+
+
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="transaction-link">
+
+                                <a href="./">See all</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="contents transaction-notification">
+
+
+                        <div class="notification-header">
+
+                            <h4>Ongoing services</h4>
+
+                            <div class="notification-action">
+
+                                <button class="notification-navigation-btn left-notif-nav-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="notification-navigation-btn right-notif-nav-btn"><i class="fa-solid fa-arrow-right"></i></button>
                             </div>
 
 
                         </div>
 
-                        <div class="contents transaction-notification">
+                        <div class="notification-list">
 
+                            <!-- uncomment the below code to show empty animation -->
 
-                            <div class="notification-header">
-
-                                <h4>Ongoing services</h4>
-
-                                <div class="notification-action">
-
-                                    <button class="notification-navigation-btn left-notif-nav-btn"><i class="fa-solid fa-arrow-left"></i></button>
-                                    <button class="notification-navigation-btn right-notif-nav-btn"><i class="fa-solid fa-arrow-right"></i></button>
-                                </div>
-
-
-                            </div>
-
-                            <div class="notification-list">
-
-                                <!-- uncomment the below code to show empty animation -->
-
-                                <!-- <div class="empty">
+                            <!-- <div class="empty">
 
                                     <lottie-player class="empty-image" src="./assets/images/empty_box.json" background="transparent" speed="1" loop autoplay></lottie-player>
 
@@ -834,501 +835,502 @@ error_reporting(E_ALL);
 
                                 </div> -->
 
-                                <p class="notification-stats">
+                            <p class="notification-stats">
 
-                                    <span class="present-count">1</span>/<span class="total-count">3</span>
+                                <span class="present-count">1</span>/<span class="total-count">3</span>
 
-                                </p>
+                            </p>
 
-                                <div class="notification-list-container">
+                            <div class="notification-list-container">
 
-                                    <div class="notification-content">
+                                <div class="notification-content">
 
-                                        <div class="notification-card special-notification">
+                                    <div class="notification-card special-notification">
 
-                                            <div class="notification-icon">
-                
-                                                <i class="fa-solid fa-exclamation-triangle"></i>
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-exclamation-triangle"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Complete your profile</p>
+
+                                                <p class="time special-notif-message">Please add your mobile number</p>
 
                                             </div>
 
-                                            <div class="notification-card-details">
-        
-                                                    <div class="notification-message">
-                
-                                                        <p class="message">Complete your profile</p>
-        
-                                                        <p class="time special-notif-message">Please add your mobile number</p>
-                
-                                                    </div>
+                                            <div class="notification-chart" style="border-top-color: rgb(211, 145, 58); border-right-color: rgb(211, 145, 58);" data-percent="50">
 
-                                                    <div class="notification-chart" style="border-top-color: rgb(211, 145, 58); border-right-color: rgb(211, 145, 58);" data-percent="50">
+                                                <div class="chart-text">50%</div>
 
-                                                        <div class="chart-text">50%</div>
-
-                                                    </div>
-        
-                                                    
-        
                                             </div>
 
 
 
                                         </div>
 
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status pending">Pending</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status ongoing">Ongoing</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status completed">Completed</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
 
-
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status ongoing">Ongoing</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
 
                                     </div>
 
-                                    <div class="notification-content">
+                                    <div class="notification-card">
 
+                                        <div class="notification-icon">
 
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status pending">Pending</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
+                                            <i class="fa-solid fa-socks"></i>
+
                                         </div>
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
                                             </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status ongoing">Ongoing</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status pending">Pending</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
                                             </div>
-        
-        
+
                                         </div>
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status completed">Completed</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
-                                        
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status pending">Pending</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status completed">Completed</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
+
 
                                     </div>
 
-                                    <div class="notification-content">
+                                    <div class="notification-card">
 
+                                        <div class="notification-icon">
 
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status pending">Pending</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
+                                            <i class="fa-solid fa-socks"></i>
+
                                         </div>
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
                                             </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status ongoing">Ongoing</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status ongoing">Ongoing</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
                                             </div>
-        
-        
+
                                         </div>
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status completed">Completed</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
-                                        
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status pending">Pending</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
-    
-                                        <div class="notification-card">
-        
-                                            <div class="notification-icon">
-        
-                                                <i class="fa-solid fa-socks"></i>
-        
-                                            </div>
-    
-                                            <div class="notification-card-details">
-    
-                                                <div class="notification-message">
-            
-                                                    <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
-    
-                                                    <p class="time">5 min ago</p>
-            
-                                                </div>
-    
-                                                <div class="notification-transaction-details">
-    
-                                                    <p class="status completed">Completed</p>
-    
-                                                    <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
-    
-                                                </div>
-    
-                                            </div>
-        
-        
-                                        </div>
+
 
                                     </div>
-                                    
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status completed">Completed</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status ongoing">Ongoing</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="notification-content">
+
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status pending">Pending</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status ongoing">Ongoing</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status completed">Completed</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status pending">Pending</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status completed">Completed</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="notification-content">
+
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status pending">Pending</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status ongoing">Ongoing</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status completed">Completed</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status pending">Pending</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="notification-card">
+
+                                        <div class="notification-icon">
+
+                                            <i class="fa-solid fa-socks"></i>
+
+                                        </div>
+
+                                        <div class="notification-card-details">
+
+                                            <div class="notification-message">
+
+                                                <p class="message">Hooli sent you a sum of &#8358; <?php echo format_price("1000"); ?></p>
+
+                                                <p class="time">5 min ago</p>
+
+                                            </div>
+
+                                            <div class="notification-transaction-details">
+
+                                                <p class="status completed">Completed</p>
+
+                                                <p class="amount">&#8358;<?php echo format_price("1000") ?></p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
 
                                 </div>
 
 
+
                             </div>
+
 
                         </div>
 
@@ -1340,9 +1342,12 @@ error_reporting(E_ALL);
 
         </div>
 
+    </div>
 
-        
-        <script src="../assets/scripts/functions.js" async></script>
-        <script src="./assets/scripts/index.js" defer></script>
-    </body>
+
+
+    <script src="../assets/scripts/functions.js" async></script>
+    <script src="./assets/scripts/index.js" defer></script>
+</body>
+
 </html>
