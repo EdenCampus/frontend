@@ -104,6 +104,7 @@
   justify-content: center;
   border-radius: 7px;
   border: none;
+  cursor: pointer;
 }
 .main-side-content .action-card .action-content .action .icon {
   margin-bottom: 5px;

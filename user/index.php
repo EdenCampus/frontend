@@ -28,7 +28,41 @@ error_reporting(E_ALL);
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="dashboard-modal">
+
+            <div class="dashboard-modal-content">
+
+                <button class="cancel-btn cancel-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+
+                <div class="dashboard-transaction-history-modal">
+
+                    <div class="dashboard-transaction-history-modal-image">
+                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="" />
+                    </div>
+
+                    <div class="dashboard-transaction-history-modal-content">
+                        <h2>Transfer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo labore voluptatibus tenetur culpa vitae delectus necessitatibus </p>
+
+                        <div class="dashboard-transaction-history-modal-content-action">
+                            <button class="button">Repeat</button>
+
+                            <a href="" class="button">Use Details</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="dashboard-modal-loader">
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                </div>
+
+            </div>
+
+        </div>
+
         <div class="main-body">
+
 
 
             <div class="nav-side">
@@ -110,24 +144,9 @@ error_reporting(E_ALL);
                             </div>
 
                             <div class="action-content transaction-history">
+                                <!-- the data id is the id of each transactions -->
 
-                                <a href="./" class="action action-link">
-
-                                    <div class="history-image">
-
-                                    <div class="image">
-
-                                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="">
-                                    </div>
-
-
-                                    </div>
-
-                                    <p class="history-text">@olawale</p>
-
-                                </a>
-
-                                <a href="./" class="action action-link">
+                                <a data-id="1" class="action action-link transaction-link-btn">
 
                                     <div class="history-image">
 
@@ -143,7 +162,7 @@ error_reporting(E_ALL);
 
                                 </a>
 
-                                <a href="./" class="action action-link">
+                                <a data-id="1" class="action action-link transaction-link-btn">
 
                                     <div class="history-image">
 
@@ -159,7 +178,7 @@ error_reporting(E_ALL);
 
                                 </a>
 
-                                <a href="./" class="action action-link">
+                                <a data-id="1" class="action action-link transaction-link-btn">
 
                                     <div class="history-image">
 
@@ -175,7 +194,7 @@ error_reporting(E_ALL);
 
                                 </a>
 
-                                <a href="./" class="action action-link">
+                                <a data-id="1" class="action action-link transaction-link-btn">
 
                                     <div class="history-image">
 
@@ -190,7 +209,8 @@ error_reporting(E_ALL);
                                     <p class="history-text">@olawale</p>
 
                                 </a>
-                                <a href="./" class="action action-link">
+
+                                <a data-id="1" class="action action-link transaction-link-btn">
 
                                     <div class="history-image">
 
@@ -205,7 +225,22 @@ error_reporting(E_ALL);
                                     <p class="history-text">@olawale</p>
 
                                 </a>
-                                <a href="./" class="action action-link">
+                                <a data-id="1" class="action action-link transaction-link-btn">
+
+                                    <div class="history-image">
+
+                                    <div class="image">
+
+                                        <img src="./assets/images/profile_images/profile_image_1.jpeg" alt="">
+                                    </div>
+
+
+                                    </div>
+
+                                    <p class="history-text">@olawale</p>
+
+                                </a>
+                                <a data-id="1" class="action action-link transaction-link-btn">
 
                                     <div class="history-image">
 

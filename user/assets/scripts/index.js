@@ -1,7 +1,8 @@
 "use strict";
 var props = {
     shrinkedNavBarActive: false,
-    notificationActive: false
+    notificationActive: false,
+    modalOpened: false
 }
 
 window.addEventListener("load", ()=>{
@@ -16,13 +17,20 @@ window.addEventListener("load", ()=>{
         transactionPrevBtn = Ele(".left-transaction-btn"),
         totalTransactionCountElement = Ele(".transaction-list-content span.total"),
         notificationBtn = All("header .link-btn li button"),
-        closeNotifBtn = Ele(".main-notification .notification-header .close-notification-button");
+        closeNotifBtn = Ele(".main-notification .notification-header .close-notification-button"),
+        transactionLinkBtn = All(".transaction-link-btn"),
+        modalCloseBtn = Ele(".cancel-modal-btn");
 
     closeNotifBtn.addEventListener("click", ()=>{
         actions("close-notif");
     })
 
-        console.log(closeNotifBtn)
+    modalCloseBtn.addEventListener("click", ()=>{
+
+        closeModal()
+
+    })
+
 
     navDropDownLink.forEach(element => {
 
@@ -49,6 +57,20 @@ window.addEventListener("load", ()=>{
             // console.log(element)
 
         }
+    })
+
+    transactionLinkBtn.forEach(element => {
+
+        if(element.hasAttribute("data-id")){
+
+            var id = element.getAttribute("data-id");
+
+            element.addEventListener("click", ()=> {
+                openTransModal(id)
+
+            });
+        }
+
     })
 
     navChangePosBtn.addEventListener("click", changeNavPos);
@@ -79,6 +101,101 @@ function actions(act){
         default:
             return;
     }
+}
+
+function openModal(){
+
+    const modal = Ele(".dashboard-modal");
+
+    return new Promise((resolve, reject) => {
+
+        try {
+            
+            modal.style.display = "flex";
+    
+            setTimeout(()=>{
+    
+                modal.style.opacity = "1";
+    
+            }, 50)
+
+            resolve({
+                response: "Modal Opened"
+            })
+
+        } catch (error) {
+
+            reject({
+                response: "Error encountered why opening modal"
+            })
+            
+        }
+
+        
+    })
+
+
+}
+
+function closeModal(){
+
+    const modal = Ele(".dashboard-modal");
+    var tansHistoryContainer = Ele(".dashboard-transaction-history-modal"),
+        loader = Ele(".dashboard-modal-loader");
+
+    return new Promise((resolve, reject) => {
+
+        try {
+
+            tansHistoryContainer.style.display = "none";
+            loader.style.display = "flex";
+            
+            modal.style.opacity = "0";
+            
+            setTimeout(()=>{
+
+                modal.style.display = "none";
+    
+    
+            }, 1000)
+
+            resolve({
+                response: "Modal Closed"
+            })
+
+        } catch (error) {
+
+            reject({
+                response: "Error encountered why closing modal"
+            })
+            
+        }
+
+        
+    })
+
+
+}
+
+function openTransModal(id){
+    var tansHistoryContainer = Ele(".dashboard-transaction-history-modal"),
+        loader = Ele(".dashboard-modal-loader");
+
+    if(id){
+
+        openModal().then(()=>{
+
+            setTimeout(()=>{
+
+                tansHistoryContainer.style.display = "flex";
+                loader.style.display = "none";
+
+            }, [1000])
+
+        });
+
+    }
+
 }
 
 function openNavDropDown(id){
